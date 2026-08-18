@@ -1,0 +1,43 @@
+# Site Map
+
+- `/` — Mosaic Labs portfolio
+- `/projects/aurora-labs/` — Aurora Labs
+  - `company.html`
+  - `contact.html`
+  - `product.html`
+- `/projects/monolith-architecture/` — Monolith
+  - `contact.html`
+  - `projects.html`
+  - `studio.html`
+- `/projects/casa-rosso/` — Casa Rosso
+  - `menu.html`
+  - `reservations.html`
+  - `story.html`
+- `/projects/apex-performance/` — Apex Performance
+  - `assessment.html`
+  - `coaches.html`
+  - `programs.html`
+- `/projects/papertrail-journal/` — Papertrail
+  - `about.html`
+  - `newsletter.html`
+  - `stories.html`
+- `/projects/kindred-wellness/` — Kindred
+  - `book.html`
+  - `practitioners.html`
+  - `services.html`
+- `/projects/maison-noire/` — Maison Noire
+  - `atelier.html`
+  - `collection.html`
+  - `contact.html`
+- `/projects/pennywise-app/` — Pennywise
+  - `features.html`
+  - `pricing.html`
+  - `security.html`
+- `/projects/wild-north/` — Wild North
+  - `expeditions.html`
+  - `field-notes.html`
+  - `plan.html`
+- `/projects/signal-room/` — Signal Room
+  - `about.html`
+  - `calendar.html`
+  - `visit.html`
