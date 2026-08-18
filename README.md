@@ -9,7 +9,7 @@ Upload the contents of this folder to the root of a GitHub repository and enable
 ## Structure
 
 - `index.html` — Mosaic Labs portfolio
-- `projects/` — ten complete project sites
+- `projects/` — thirteen complete project sites
 - `assets/` — portfolio CSS and JavaScript
 - `IMAGE_ASSETS.md` — replaceable local imagery
 - `SITE_MAP.md` — page inventory
