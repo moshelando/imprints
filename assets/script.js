@@ -1,1 +1,0 @@
-document.querySelectorAll('iframe').forEach(i=>i.addEventListener('load',()=>i.classList.add('loaded')));const nav=document.querySelector('.nav');const syncNav=()=>nav&&nav.classList.toggle('is-scrolled',scrollY>12);syncNav();addEventListener('scroll',syncNav,{passive:true});
