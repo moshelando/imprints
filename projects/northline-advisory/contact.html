@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Start a confidential conversation with Northline Advisory." />
+  <title>Contact | Northline Advisory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header"><div class="shell nav"><a class="brand" href="index.html"><span class="brand-mark"></span><span class="brand-text"><strong>Northline Advisory</strong><span>Real Assets • Strategy • Transactions</span></span></a><nav class="nav-links"><a href="index.html">Home</a><a href="capability.html">Capability</a><a href="leadership.html">Leadership</a><a href="contact.html">Contact</a></nav><a class="contact-link" href="contact.html">Start a conversation →</a><button class="mobile-toggle" aria-label="Toggle menu">☰</button></div></header>
+  <main>
+    <section class="page-hero"><div class="shell reveal"><div class="eyebrow">Contact</div><h1>A direct first conversation.</h1><p class="lede">Tell us what is moving, what is uncertain and where you need independent judgment. Initial discussions are confidential and led by a senior advisor.</p></div></section>
+    <section class="section alt"><div class="shell contact-layout">
+      <div class="contact-aside reveal"><div class="eyebrow">Typical mandates</div><h2>Strategy, transactions and market questions that do not fit a standard box.</h2><div class="contact-points"><span>Portfolio & platform review</span><span>Transaction strategy</span><span>Capital markets & REIT advisory</span><span>Environmental & energy markets</span></div></div>
+      <form class="contact-form reveal" data-contact-form>
+        <div class="field"><label for="northline-name">Name</label><input id="northline-name" name="name" required></div>
+        <div class="field"><label for="northline-company">Company</label><input id="northline-company" name="company"></div>
+        <div class="field"><label for="northline-email">Email</label><input id="northline-email" name="email" type="email" required></div>
+        <div class="field"><label for="northline-topic">Topic</label><select id="northline-topic" name="topic"><option>Strategic advisory</option><option>Transaction advisory</option><option>Capital markets / REITs</option><option>Environmental / energy markets</option><option>Other</option></select></div>
+        <div class="field full"><label for="northline-message">What would you like to discuss?</label><textarea id="northline-message" name="message" required></textarea></div>
+        <div class="field full contact-submit"><button class="btn primary" type="submit">Send inquiry</button><p class="contact-note">Confidential inquiries are reviewed directly by the advisory team.</p></div>
+        <div class="form-status full" data-contact-status hidden tabindex="-1"></div>
+      </form>
+    </div></section>
+  </main>
+  <footer><div class="shell footer-grid"><p>© <span id="year"></span> Northline Advisory. All rights reserved.</p><div class="footer-links"><a href="capability.html">Capability</a><a href="leadership.html">Leadership</a></div></div></footer>
+  <script src="script.js"></script><script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
