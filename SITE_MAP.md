@@ -4,11 +4,8 @@
 - `/projects/aurora-systems/` — Aurora Systems
   - `company.html`
   - `contact.html`
+  - `privacy.html`
   - `product.html`
-- `/projects/monolith-architecture/` — Monolith
-  - `contact.html`
-  - `projects.html`
-  - `studio.html`
 - `/projects/casa-rosso/` — Casa Rosso
   - `menu.html`
   - `reservations.html`
@@ -17,11 +14,6 @@
   - `assessment.html`
   - `coaches.html`
   - `programs.html`
-- `/projects/papertrail-journal/` — Papertrail
-  - `about.html`
-  - `newsletter.html`
-  - `stories.html`
-  - full article pages
 - `/projects/kindred-wellness/` — Kindred
   - `book.html`
   - `practitioners.html`
@@ -33,20 +25,18 @@
 - `/projects/pennywise-app/` — Pennywise
   - `features.html`
   - `pricing.html`
+  - `privacy.html`
   - `security.html`
+  - `terms.html`
 - `/projects/wild-north/` — Wild North
   - `expeditions.html`
   - `field-notes.html`
   - `plan.html`
-- `/projects/signal-room/` — Signal Room
-  - `about.html`
-  - `calendar.html`
-  - `visit.html`
 - `/projects/northline-advisory/` — Northline Advisory
   - `capability.html`
   - `leadership.html`
   - `contact.html`
-- `/projects/bennett-rowe-accounting/` — Bennett Rowe Accounting + Advisory
+- `/projects/bennett-rowe-accounting/` — Bennett Rowe
   - `services.html`
   - `industries.html`
   - `contact.html`
