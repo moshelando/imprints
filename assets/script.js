@@ -1,1 +1,0 @@
-document.querySelectorAll('iframe').forEach(i=>i.addEventListener('load',()=>i.classList.add('loaded')));

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
-<title id="t">Featured artist image</title><desc id="d">Placeholder artwork: 1400×1000; experimental/independent musician portrait or performance</desc>
-<rect width="1600" height="1100" fill="#ff4d00"/>
-<circle cx="1030" cy="563" r="330" fill="#f2eddf" opacity=".72"/>
-<path d="M0 759 L435 499 L1391 633 L1600 469 L1600 1100 L0 1100Z" fill="#92eaff" opacity=".62"/>
-<rect x="631" y="483" width="510" height="620" rx="281" fill="none" stroke="#050505" stroke-width="3" opacity=".35" transform="rotate(78 1000 500)"/>
-<g fill="#050505"><text x="70" y="88" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">ASSET PLACEHOLDER</text><text x="70" y="980" font-family="Georgia, serif" font-size="58">Featured artist image</text><text x="70" y="1030" font-family="Arial, sans-serif" font-size="23" opacity=".65">1400×1000; experimental/independent musician portrait or performance</text></g>
-</svg>
