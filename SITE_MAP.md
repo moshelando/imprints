@@ -21,6 +21,7 @@
   - `about.html`
   - `newsletter.html`
   - `stories.html`
+  - full article pages
 - `/projects/kindred-wellness/` — Kindred
   - `book.html`
   - `practitioners.html`
@@ -41,3 +42,15 @@
   - `about.html`
   - `calendar.html`
   - `visit.html`
+- `/projects/northline-advisory/` — Northline Advisory
+  - `capability.html`
+  - `leadership.html`
+  - `contact.html`
+- `/projects/bennett-rowe-accounting/` — Bennett Rowe Accounting + Advisory
+  - `services.html`
+  - `industries.html`
+  - `contact.html`
+- `/projects/fieldstone-landscape/` — Fieldstone Landscape Co.
+  - `services.html`
+  - `projects.html`
+  - `estimate.html`

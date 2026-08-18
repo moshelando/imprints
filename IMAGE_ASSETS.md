@@ -8,10 +8,13 @@ The site contains no text/content placeholders. These local image files are the 
 - `projects/aurora-systems/assets/control-plane.svg` — Product control-plane visualization
 - `projects/aurora-systems/assets/hero-orbit.svg` — Abstract luminous AI orchestration hero artwork
 - `projects/aurora-systems/assets/team-grid.svg` — Aurora team / engineering culture image
-- `projects/casa-rosso/assets/hero-table.svg` — Dining room / table hero photograph
+- `projects/casa-rosso/assets/hero-table.svg` — Dining room / table hero image
 - `projects/casa-rosso/assets/interior.svg` — Restaurant interior image
-- `projects/casa-rosso/assets/pasta.svg` — Signature pasta dish image
-- `projects/kindred-wellness/assets/hero-room.svg` — Quiet treatment room / natural interior
+- `projects/casa-rosso/assets/pasta.svg` — Signature pasta image
+- `projects/fieldstone-landscape/assets/terrace.svg` — Terraced landscape project artwork
+- `projects/fieldstone-landscape/assets/garden.svg` — Residential garden project artwork
+- `projects/fieldstone-landscape/assets/stone.svg` — Stonework and planting project artwork
+- `projects/kindred-wellness/assets/hero-room.svg` — Treatment room / natural interior
 - `projects/kindred-wellness/assets/practitioner.svg` — Practitioner portrait
 - `projects/kindred-wellness/assets/ritual.svg` — At-home wellness ritual image
 - `projects/maison-noire/assets/atelier.svg` — Atelier detail image
@@ -20,7 +23,7 @@ The site contains no text/content placeholders. These local image files are the 
 - `projects/monolith-architecture/assets/hero-building.svg` — Hero architectural project image
 - `projects/monolith-architecture/assets/project-civic.svg` — Civic project image
 - `projects/monolith-architecture/assets/project-house.svg` — Residential project image
-- `projects/papertrail-journal/assets/cover-story.svg` — Lead editorial story photograph
+- `projects/papertrail-journal/assets/cover-story.svg` — Lead editorial story image
 - `projects/papertrail-journal/assets/feature-city.svg` — City/places feature image
 - `projects/papertrail-journal/assets/feature-object.svg` — Object/design feature image
 - `projects/pennywise-app/assets/app-overview.svg` — Primary app UI / phone composition
