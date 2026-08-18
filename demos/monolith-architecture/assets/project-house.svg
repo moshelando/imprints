@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
-<title id="t">Residential project image</title><desc id="d">Placeholder artwork: 1400×1000; restrained material palette</desc>
-<rect width="1600" height="1100" fill="#ecebe6"/>
-<circle cx="910" cy="735" r="330" fill="#b7b4aa" opacity=".72"/>
-<path d="M0 755 L595 595 L1125 645 L1600 525 L1600 1100 L0 1100Z" fill="#d74b2a" opacity=".62"/>
-<rect x="615" y="395" width="510" height="620" rx="65" fill="none" stroke="#11110f" stroke-width="3" opacity=".35" transform="rotate(6 1000 500)"/>
-<g fill="#11110f"><text x="70" y="88" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">ASSET PLACEHOLDER</text><text x="70" y="980" font-family="Georgia, serif" font-size="58">Residential project image</text><text x="70" y="1030" font-family="Arial, sans-serif" font-size="23" opacity=".65">1400×1000; restrained material palette</text></g>
-</svg>
