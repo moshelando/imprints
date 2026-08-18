@@ -1,4 +1,5 @@
 (() => {
+  const identity=document.createElement('link'); identity.rel='stylesheet'; identity.href='editorial.css'; document.head.append(identity);
   const header = document.querySelector('.site-header');
   const setHeaderState = () => header && header.classList.toggle('is-scrolled', window.scrollY > 12);
   setHeaderState();
