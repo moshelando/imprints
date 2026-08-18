@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
+<title id="t">Collection look 01</title><desc id="d">Placeholder artwork: 1200×1600; product/editorial hybrid</desc>
+<rect width="1600" height="1100" fill="#0b0b0a"/>
+<circle cx="860" cy="690" r="330" fill="#9e0b0f" opacity=".72"/>
+<path d="M0 700 L620 500 L1130 570 L1600 620 L1600 1100 L0 1100Z" fill="#7a756d" opacity=".62"/>
+<rect x="500" y="580" width="510" height="620" rx="200" fill="none" stroke="#f4f0e7" stroke-width="3" opacity=".35" transform="rotate(51 1000 500)"/>
+<g fill="#f4f0e7"><text x="70" y="88" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">ASSET PLACEHOLDER</text><text x="70" y="980" font-family="Georgia, serif" font-size="58">Collection look 01</text><text x="70" y="1030" font-family="Arial, sans-serif" font-size="23" opacity=".65">1200×1600; product/editorial hybrid</text></g>
+</svg>
