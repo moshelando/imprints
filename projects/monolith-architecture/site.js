@@ -1,4 +1,5 @@
 (() => {
+  const navFix=document.createElement('link');navFix.rel='stylesheet';navFix.href='../nav-fix.css';document.head.append(navFix);
   const header = document.querySelector('.site-header');
   const setHeaderState = () => header && header.classList.toggle('is-scrolled', window.scrollY > 12);
   setHeaderState();
