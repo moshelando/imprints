@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
+<title id="t">Primary app UI / phone composition</title><desc id="d">Placeholder artwork: 1600×1200; bright, friendly personal-finance interface</desc>
+<rect width="1600" height="1100" fill="#fff3aa"/>
+<circle cx="1120" cy="384" r="330" fill="#ff7ba7" opacity=".72"/>
+<path d="M0 662 L690 562 L1188 524 L1600 702 L1600 1100 L0 1100Z" fill="#8d7bff" opacity=".62"/>
+<rect x="418" y="674" width="510" height="620" rx="218" fill="none" stroke="#1c2250" stroke-width="3" opacity=".35" transform="rotate(57 1000 500)"/>
+<g fill="#1c2250"><text x="70" y="88" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">ASSET PLACEHOLDER</text><text x="70" y="980" font-family="Georgia, serif" font-size="58">Primary app UI / phone composition</text><text x="70" y="1030" font-family="Arial, sans-serif" font-size="23" opacity=".65">1600×1200; bright, friendly personal-finance interface</text></g>
+</svg>

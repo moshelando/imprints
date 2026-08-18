@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
+<title id="t">Live performance hero image</title><desc id="d">Placeholder artwork: 1800×1200; sweaty small venue, strong light, audience close to stage</desc>
+<rect width="1600" height="1100" fill="#ff4d00"/>
+<circle cx="900" cy="466" r="330" fill="#f2eddf" opacity=".72"/>
+<path d="M0 778 L900 468 L1362 656 L1600 428 L1600 1100 L0 1100Z" fill="#92eaff" opacity=".62"/>
+<rect x="672" y="436" width="510" height="620" rx="272" fill="none" stroke="#050505" stroke-width="3" opacity=".35" transform="rotate(75 1000 500)"/>
+<g fill="#050505"><text x="70" y="88" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">ASSET PLACEHOLDER</text><text x="70" y="980" font-family="Georgia, serif" font-size="58">Live performance hero image</text><text x="70" y="1030" font-family="Arial, sans-serif" font-size="23" opacity=".65">1800×1200; sweaty small venue, strong light, audience close to stage</text></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
+<title id="t">Security/privacy illustration</title><desc id="d">Placeholder artwork: 1400×1000; playful lock/privacy visual</desc>
+<rect width="1600" height="1100" fill="#fff3aa"/>
+<circle cx="380" cy="578" r="330" fill="#ff7ba7" opacity=".72"/>
+<path d="M0 624 L760 624 L1246 748 L1600 784 L1600 1100 L0 1100Z" fill="#8d7bff" opacity=".62"/>
+<rect x="336" y="248" width="510" height="620" rx="236" fill="none" stroke="#1c2250" stroke-width="3" opacity=".35" transform="rotate(63 1000 500)"/>
+<g fill="#1c2250"><text x="70" y="88" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">ASSET PLACEHOLDER</text><text x="70" y="980" font-family="Georgia, serif" font-size="58">Security/privacy illustration</text><text x="70" y="1030" font-family="Arial, sans-serif" font-size="23" opacity=".65">1400×1000; playful lock/privacy visual</text></g>
+</svg>
