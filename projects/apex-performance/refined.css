@@ -1,0 +1,66 @@
+/* Apex Performance — high-energy but controlled sports brand. */
+:root{--apex-black:#0b0c0c;--apex-lime:#dfff3f;--apex-paper:#f1f1ec;--apex-gray:#7f8585}
+body.apex-performance{background:var(--apex-paper);color:var(--apex-black);font-family:Arial,Helvetica,sans-serif}
+.apex-performance .site-header{height:72px;background:rgba(241,241,236,.96);border-bottom:2px solid var(--apex-black);padding-left:3vw;display:flex;align-items:center;justify-content:space-between}
+.apex-performance .site-brand{font-size:23px;font-weight:900;font-style:italic;letter-spacing:-.07em;text-transform:uppercase}
+.apex-performance .desktop-nav{height:100%;gap:0;border-left:2px solid var(--apex-black)}
+.apex-performance .desktop-nav a{display:flex;align-items:center;padding:0 19px;border-left:0;border-right:1px solid #252626;font-size:9px;letter-spacing:.11em;text-transform:uppercase;font-weight:800}
+.apex-performance .desktop-nav a:hover,.apex-performance .desktop-nav a.active{background:var(--apex-black);color:#fff}
+.apex-performance .desktop-nav a.active{box-shadow:inset 0 -5px 0 var(--apex-lime)}
+.apex-performance .desktop-nav a:after{display:none!important}
+.apex-performance .hero{min-height:690px;grid-template-columns:.92fr 1.08fr;border-bottom:2px solid var(--apex-black)}
+.apex-performance .hero-copy{padding:56px 4vw 54px;display:flex;flex-direction:column;justify-content:space-between}
+.apex-performance .badge{display:inline-block;background:var(--apex-lime);padding:7px 9px;border:1px solid var(--apex-black);font-size:9px;letter-spacing:.11em;text-transform:uppercase;font-weight:900}
+.apex-performance .hero h1{font-family:"Arial Black",Impact,Haettenschweiler,sans-serif;font-size:clamp(76px,8.8vw,132px);line-height:.76;letter-spacing:-.075em;text-transform:uppercase;font-style:italic;margin:23px 0 24px;max-width:600px}
+.apex-performance .lede{font-size:18px;line-height:1.55;max-width:520px;color:#343838}
+.apex-performance .hero .media{height:auto;min-height:690px;background:#111;overflow:hidden}
+.apex-performance .hero .media img{width:100%;height:100%;object-fit:cover}
+.apex-performance .btn{background:var(--apex-black);color:#fff;border:2px solid var(--apex-black);text-transform:uppercase;font-size:10px;letter-spacing:.10em;padding:14px 18px;border-radius:0}
+.apex-performance a.btn:hover{background:var(--apex-lime);color:var(--apex-black)}
+.apex-performance .stats{background:#fff;grid-template-columns:repeat(4,1fr);border-bottom:2px solid var(--apex-black)}
+.apex-performance .stat{min-height:136px;padding:27px 3vw;border-right:1px solid #c7c7c1}
+.apex-performance .stat b{font-family:"Arial Black",Impact,sans-serif;font-size:38px;letter-spacing:-.055em}
+.apex-performance .stat span{font-size:10px;letter-spacing:.10em;text-transform:uppercase;color:#616464;font-weight:800}
+.apex-performance .training-tape{background:var(--apex-lime);border-block:2px solid var(--apex-black);color:#111}
+.apex-performance .section{padding:88px 3vw;border-bottom:1px solid #bfc0bb}
+.apex-performance .section-title{font-family:"Arial Black",Impact,sans-serif;font-size:clamp(48px,6.2vw,86px);line-height:.86;letter-spacing:-.055em;text-transform:uppercase;font-style:italic}
+.apex-performance .program-grid{gap:0;border:2px solid var(--apex-black)}
+.apex-performance .program{border:0;border-right:1px solid #989a96;background:#f7f7f2;padding:28px;min-height:330px}
+.apex-performance .program:last-child{border-right:0}
+.apex-performance a.program:hover{background:var(--apex-lime)}
+.apex-performance .program h3,.apex-performance .coach-card h3{font-size:28px;letter-spacing:-.04em}
+.apex-performance .coach-card,.apex-performance .assessment-panel{border-radius:0;border:2px solid var(--apex-black);box-shadow:none}
+.apex-performance .site-footer{background:#0b0c0c;color:#d7d8d2;padding-inline:3vw;border-top:0}
+.apex-performance :focus-visible{outline:3px solid var(--apex-lime);outline-offset:3px}
+@media(max-width:820px){
+ .apex-performance .site-header{height:68px;padding-inline:18px}.apex-performance .menu-button{display:block;border:2px solid #111;background:var(--apex-lime);color:#111;padding:8px 10px;font-weight:900}.apex-performance .hero{grid-template-columns:1fr;min-height:0}.apex-performance .hero-copy{padding:48px 20px}.apex-performance .hero h1{font-size:clamp(68px,22vw,94px)}.apex-performance .hero .media{min-height:420px;height:420px}.apex-performance .stats{grid-template-columns:1fr 1fr}.apex-performance .stat:nth-child(2){border-right:0}.apex-performance .stat:nth-child(-n+2){border-bottom:1px solid #c7c7c1}.apex-performance .program-grid{grid-template-columns:1fr}.apex-performance .program{border-right:0;border-bottom:1px solid #999}.apex-performance .program:last-child{border-bottom:0}.apex-performance .section{padding:66px 20px}.apex-performance .site-footer{padding-inline:20px}
+}
+
+
+/* Tailored refinement pass — keep the energy, remove unnecessary bulk. */
+@media (min-width:821px){
+  .apex-performance .hero{min-height:640px}
+  .apex-performance .hero .media{min-height:640px}
+  .apex-performance .section{padding-top:76px;padding-bottom:76px}
+  .apex-performance .program{min-height:285px}
+  .apex-performance .program h3{font-size:26px}
+  .apex-performance .testimonial{padding:46px 3vw;background:#ddff43}
+  .apex-performance .testimonial .quote{font-size:clamp(34px,4.2vw,58px);line-height:1.03;max-width:1120px;margin:0 0 28px}
+  .apex-performance .method-grid article{min-height:270px;padding:26px}
+  .apex-performance .method-grid h3{margin-top:64px;font-size:34px}
+  .apex-performance .coach-note p{font-size:19px}
+}
+@media (max-width:820px){
+  .apex-performance .hero-copy{padding-top:42px;padding-bottom:42px}
+  .apex-performance .hero h1{font-size:clamp(60px,20vw,84px);line-height:.78}
+  .apex-performance .hero .media{height:360px;min-height:360px}
+  .apex-performance .section{padding-top:58px;padding-bottom:58px}
+  .apex-performance .section-title{font-size:clamp(42px,14vw,60px);line-height:.84}
+  .apex-performance .program{min-height:235px;padding:22px}
+  .apex-performance .program h3{font-size:25px}
+  .apex-performance .testimonial{padding:38px 20px}
+  .apex-performance .testimonial .quote{font-size:26px;line-height:1.08;margin:0 0 22px}
+  .apex-performance .method-grid article{padding:22px;min-height:230px}
+  .apex-performance .method-grid h3{margin-top:42px;font-size:30px}
+  .apex-performance .coach-note p{font-size:17px;line-height:1.25}
+}
