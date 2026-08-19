@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Mountain valley under a broad northern sky">
-<rect width="800" height="520" fill="#d7ddd6"/><rect y="330" width="800" height="190" fill="#334d43"/>
-<path d="M0 355L135 210l95 104 145-178 120 150 82-88 223 175v147H0z" fill="#52665f"/>
-<path d="M125 222l105 92 145-178 120 150 82-88 108 85-135 5-88 102-168-28-99 45z" fill="#eef0e9" opacity=".72"/>
-<path d="M0 430C150 390 230 462 345 430S568 375 800 440v80H0z" fill="#1b3930"/>
-<path d="M0 80C155 120 270 30 430 80s230 45 370 5" fill="none" stroke="#f7f6f0" stroke-opacity=".55" stroke-width="12"/>
-</svg>
