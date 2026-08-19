@@ -21,7 +21,7 @@ if(form){
       `Name: ${data.get('name')}`,
       `Organization: ${data.get('organization')||'—'}`,
       `Email: ${data.get('email')}`,
-      `Topic: ${data.get('topic')}`,
+      `Nature of inquiry: ${data.get('topic')}`,
       `Timing: ${data.get('timing')}`,
       '',
       data.get('message')
