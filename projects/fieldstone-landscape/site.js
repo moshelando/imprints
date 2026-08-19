@@ -1,1 +1,27 @@
-(()=>{const menu=document.querySelector('.menu'),nav=document.querySelector('.nav-links');const closeMenu=()=>{if(!menu||!nav)return;nav.classList.remove('open');menu.setAttribute('aria-expanded','false')};if(menu&&nav){menu.setAttribute('aria-expanded','false');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));addEventListener('keydown',e=>e.key==='Escape'&&closeMenu())};const current=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===current)a.classList.add('active')});const filterButtons=[...document.querySelectorAll('[data-filter]')],projects=[...document.querySelectorAll('[data-project]')];filterButtons.forEach(btn=>{btn.setAttribute('aria-pressed',btn.classList.contains('active')?'true':'false');btn.addEventListener('click',()=>{filterButtons.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});btn.classList.add('active');btn.setAttribute('aria-pressed','true');const value=btn.dataset.filter;projects.forEach(p=>p.hidden=value!=='all'&&p.dataset.project!==value)})});const size=document.querySelector('[data-size]'),sizeOut=document.querySelector('[data-size-output]'),type=document.querySelector('[data-project-type]'),estimate=document.querySelector('[data-estimate]');const rates={garden:[13,19],hardscape:[18,27],full:[26,38],commercial:[20,31]};function syncEstimate(){if(!size||!type||!estimate)return;const area=Number(size.value),r=rates[type.value],lo=Math.round(area*r[0]/1000),hi=Math.round(area*r[1]/1000);if(sizeOut)sizeOut.textContent=area.toLocaleString()+' sq ft';estimate.textContent='$'+lo+'k–$'+hi+'k'}if(size&&type){size.addEventListener('input',syncEstimate);type.addEventListener('change',syncEstimate);syncEstimate()}const form=document.querySelector('[data-estimate-form]');if(form)form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=Object.fromEntries(new FormData(form).entries());data.projectType=type?.options[type.selectedIndex]?.text||'';data.projectArea=size?.value||'';data.planningRange=estimate?.textContent||'';try{localStorage.setItem('fieldstone-project:'+Date.now(),JSON.stringify({submittedAt:new Date().toISOString(),...data}))}catch(_){}const status=form.querySelector('[data-form-status]');if(status){status.textContent='Thanks. Your site-walk request has been recorded with this planning range.';status.hidden=false;status.focus()}form.reset()})})();
+(()=> {
+  const menu=document.querySelector('.menu');
+  const nav=document.querySelector('.nav-links');
+  if(menu&&nav){
+    const close=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')};
+    menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+    addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+  }
+  const current=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    if(a.getAttribute('href')===current)a.classList.add('active');
+  });
+  const form=document.querySelector('[data-contact-form]');
+  if(form){
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      if(!form.reportValidity())return;
+      const status=form.querySelector('[data-form-status]');
+      if(status){
+        status.hidden=false;
+        status.textContent='Thank you. Your project inquiry has been recorded for this portfolio demo.';
+        status.focus();
+      }
+    });
+  }
+})();
