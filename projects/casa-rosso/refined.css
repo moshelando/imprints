@@ -1,0 +1,35 @@
+/* Casa Rosso — warmer, quieter trattoria editorial polish. */
+:root{--rosso-paper:#f3e8d5;--rosso-ink:#5f1915;--rosso-red:#8a211d;--rosso-olive:#555a3c;--rosso-line:#d6c5aa}
+body.casa-rosso{background:var(--rosso-paper);color:#4e1c18;font-family:Georgia,"Times New Roman",serif}
+.casa-rosso .site-header{background:rgba(243,232,213,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--rosso-line);padding-inline:max(4vw,calc((100vw - 1200px)/2));height:78px;display:flex;align-items:center;justify-content:space-between}
+.casa-rosso .site-brand{font-size:27px;letter-spacing:.01em;color:var(--rosso-red);font-style:italic}
+.casa-rosso .desktop-nav{gap:6px}
+.casa-rosso .desktop-nav a{font-family:Arial,sans-serif;font-size:9px;letter-spacing:.15em;text-transform:uppercase;padding:10px 12px;color:#765048;border-bottom:1px solid transparent}
+.casa-rosso .desktop-nav a:hover,.casa-rosso .desktop-nav a.active{color:var(--rosso-red);border-bottom-color:var(--rosso-red)}
+.casa-rosso .desktop-nav a:after{display:none!important}
+.casa-rosso .hero{max-width:1200px;margin:auto;padding:72px 0 86px;grid-template-columns:.76fr 1.24fr;gap:72px;min-height:700px}
+.casa-rosso .eyebrow{font-family:Arial,sans-serif;color:#84655e;font-size:9px;letter-spacing:.16em}
+.casa-rosso .hero h1{font-size:clamp(76px,8.4vw,126px);line-height:.78;letter-spacing:-.055em;color:var(--rosso-red);margin:20px 0 30px}
+.casa-rosso .hero h1 i{font-weight:400;margin-left:14%;color:#3e4c34}
+.casa-rosso .lede{font-size:18px;line-height:1.7;color:#765149;max-width:500px}
+.casa-rosso .hero .media{height:610px;border-radius:2px;box-shadow:0 22px 70px rgba(74,39,27,.13);overflow:hidden;border:1px solid #ccb99d}
+.casa-rosso .hero .media img{width:100%;height:100%;object-fit:cover}
+.casa-rosso .btn{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.11em;font-size:10px;background:var(--rosso-red);color:#fff;border:0;padding:14px 20px;border-radius:0}
+.casa-rosso a.btn:hover{background:#6e1714}
+.casa-rosso .ribbon{background:var(--rosso-red);color:#fff6e8;border-block:0;font-family:Arial,sans-serif;letter-spacing:.10em}
+.casa-rosso .section{max-width:1200px;margin:auto;padding:94px 0}
+.casa-rosso .section-title{font-size:clamp(42px,5.4vw,72px);line-height:.97;letter-spacing:-.045em;color:var(--rosso-ink)}
+.casa-rosso .menu-preview{grid-template-columns:.8fr 1.2fr;gap:70px}
+.casa-rosso .menu-item{padding:18px 0;border-bottom:1px solid var(--rosso-line)}
+.casa-rosso .menu-item b{font-size:18px;font-weight:400}
+.casa-rosso .menu-item small{display:block;margin-top:5px;color:#886d64;font-family:Arial,sans-serif;font-size:11px}
+.casa-rosso .menu-item>span{font-family:Arial,sans-serif;font-size:12px;color:var(--rosso-red)}
+.casa-rosso .cards-2,.casa-rosso .cards-3,.casa-rosso .gallery{gap:16px}
+.casa-rosso .story-card,.casa-rosso .house-notes,.casa-rosso .reservation-panel{background:#f9f1e5;border:1px solid var(--rosso-line);box-shadow:none;border-radius:0}
+.casa-rosso .media{border-radius:0}
+.casa-rosso .site-footer{background:#e6d8c2;border-top:1px solid var(--rosso-line);padding-inline:max(4vw,calc((100vw - 1200px)/2));color:#75574e}
+.casa-rosso :focus-visible{outline:2px solid var(--rosso-red);outline-offset:4px}
+@media(max-width:820px){
+ .casa-rosso .site-header{padding-inline:20px;height:70px}.casa-rosso .menu-button{display:block;background:transparent;border:1px solid #a88e76;color:var(--rosso-red);padding:8px 11px}.casa-rosso .hero{width:calc(100% - 40px);padding:54px 0 58px;grid-template-columns:1fr;gap:38px;min-height:0}.casa-rosso .hero h1{font-size:clamp(74px,23vw,104px)}.casa-rosso .hero .media{height:420px}.casa-rosso .section{width:calc(100% - 40px);padding:68px 0}.casa-rosso .menu-preview{grid-template-columns:1fr;gap:34px}.casa-rosso .site-footer{padding-inline:20px}
+}
+@media(max-width:820px){.casa-rosso .hero .media{width:100%;aspect-ratio:auto}}
