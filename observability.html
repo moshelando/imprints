@@ -1,0 +1,58 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="Trace-first observability for AI systems, including execution waterfalls, evaluations and debugging.">
+      <meta name="theme-color" content="#070A12">
+      <title>Observability — Aurora Systems</title>
+      <link rel="icon" href="assets/aurora-mark.svg" type="image/svg+xml">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="interior-page">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <aside class="rail" aria-label="Primary navigation">
+      <a class="rail-mark" href="index.html" aria-label="Aurora Systems home"><span class="mark-glyph">A/</span><span class="mark-word">AURORA</span></a>
+      <nav class="rail-nav"><a class="rail-link " href="index.html"><span>01</span>Platform</a><a class="rail-link " href="routing.html"><span>02</span>Routing</a><a class="rail-link is-active" href="observability.html"><span>03</span>Observe</a><a class="rail-link " href="governance.html"><span>04</span>Govern</a><a class="rail-link" href="governance.html#permissions"><span>04B</span>Security</a><a class="rail-link " href="developers.html"><span>05</span>Developers</a><a class="rail-link " href="company.html"><span>06</span>Company</a></nav>
+      <div class="rail-bottom"><button class="rail-command" type="button" data-command-open aria-label="Open command palette"><span>⌘K</span><b>Find</b></button><a class="rail-contact " href="contact.html"><span>07</span>Contact</a></div>
+    </aside>
+    <header class="mobile-bar">
+      <a href="index.html" class="mobile-brand"><span class="mark-glyph">A/</span> Aurora Systems</a>
+      <div class="mobile-actions"><button type="button" data-command-open aria-label="Open command palette">⌕</button><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer">Menu</button></div>
+    </header>
+    <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer hidden>
+      <nav><a class="rail-link " href="index.html"><span>01</span>Platform</a><a class="rail-link " href="routing.html"><span>02</span>Routing</a><a class="rail-link is-active" href="observability.html"><span>03</span>Observe</a><a class="rail-link " href="governance.html"><span>04</span>Govern</a><a class="rail-link" href="governance.html#permissions"><span>04B</span>Security</a><a class="rail-link " href="developers.html"><span>05</span>Developers</a><a class="rail-link " href="company.html"><span>06</span>Company</a><a class="rail-contact " href="contact.html"><span>07</span>Contact</a></nav>
+      <div class="drawer-meta">Runtime control for production AI systems.</div>
+    </div>
+      <div class="page-shell">
+        <main id="main">
+<section class="interior-intro with-chapter" aria-labelledby="observe-title"><aside class="chapter-map"><span>03 / OBSERVE</span><a href="#waterfall">Waterfall</a><a href="#evaluations">Evaluations</a><a href="#debug">Debugging</a><a href="#exports">Exports</a></aside><div class="intro-main"><div class="kicker">Trace-first observability</div><h1 id="observe-title">Debug the system that produced the answer.</h1><p>A model response is only the last visible event. Aurora keeps request context, routes, tools, retrieval, retries, policy checks, evaluator scores, and outcome metadata in one trace.</p></div><div class="intro-status"><span>trace</span><b>8F2C</b><span>spans</span><b>07</b><span>status</span><b><i></i>complete</b></div></section>
+<section class="technical-section with-chapter" id="waterfall"><div class="chapter-spacer"></div><div class="tech-main"><header><span>01 / WATERFALL</span><h2>Read execution in order.</h2></header><div class="obs-toolbar" data-trace-filter-group><button class="is-active" type="button" data-trace-filter="all" aria-pressed="true">All spans</button><button type="button" data-trace-filter="routing" aria-pressed="false">Routing</button><button type="button" data-trace-filter="model" aria-pressed="false">Model</button><button type="button" data-trace-filter="eval" aria-pressed="false">Evaluation</button></div><div class="full-waterfall"><div class="fw-head"><span>span</span><span>timeline</span><span>duration</span><span>status</span></div><div class="fw-row" data-trace-kind="routing"><b>intent.classify</b><span><i style="--start:2%;--width:8%"></i></span><em>18 ms</em><strong>ok</strong></div><div class="fw-row" data-trace-kind="routing"><b>policy.region</b><span><i style="--start:11%;--width:3%"></i></span><em>4 ms</em><strong>ok</strong></div><div class="fw-row" data-trace-kind="routing"><b>route.score</b><span><i style="--start:15%;--width:5%"></i></span><em>10 ms</em><strong>ok</strong></div><div class="fw-row" data-trace-kind="model"><b>model.generate</b><span><i class="violet" style="--start:21%;--width:62%"></i></span><em>238 ms</em><strong>ok</strong></div><div class="fw-row" data-trace-kind="eval"><b>eval.groundedness</b><span><i class="amber" style="--start:84%;--width:12%"></i></span><em>42 ms</em><strong>0.94</strong></div><div class="fw-row" data-trace-kind="eval"><b>response.commit</b><span><i style="--start:97%;--width:2%"></i></span><em>3 ms</em><strong>ok</strong></div></div></div></section>
+<section class="technical-section with-chapter" id="evaluations"><div class="chapter-spacer"></div><div class="tech-main"><header><span>02 / EVALUATIONS</span><h2>Attach quality signals to the same trace.</h2></header><div class="eval-ledger"><div><span>groundedness</span><b>0.94</b><em>pass ≥ 0.90</em></div><div><span>policy adherence</span><b>pass</b><em>deterministic</em></div><div><span>task completion</span><b>0.88</b><em>review band</em></div><div><span>user outcome</span><b>resolved</b><em>application signal</em></div></div></div></section>
+<section class="technical-section with-chapter" id="debug"><div class="chapter-spacer"></div><div class="tech-main"><header><span>03 / DEBUGGING</span><h2>Compare the path that failed with the path that worked.</h2></header><div class="diff-view"><div><div class="diff-head">Trace 7D91 / failed</div><p><span>-</span> route: quality</p><p><span>-</span> tool: knowledge.search</p><p class="bad"><span>-</span> retrieval_hits: 0</p><p><span>-</span> eval: groundedness 0.42</p></div><div><div class="diff-head">Trace 8F2C / resolved</div><p><span>+</span> route: quality</p><p><span>+</span> tool: knowledge.search</p><p class="good"><span>+</span> retrieval_hits: 4</p><p><span>+</span> eval: groundedness 0.94</p></div></div></div></section>
+<section class="technical-section with-chapter" id="exports"><div class="chapter-spacer"></div><div class="tech-main"><header><span>04 / EXPORTS</span><h2>Keep Aurora inside your existing telemetry path.</h2></header><div class="constraint-lines"><div><b>Structured events</b><span>request, route, policy, tool, model, evaluation</span></div><div><b>Trace context</b><span>stable IDs across application and Aurora spans</span></div><div><b>OpenTelemetry</b><span>export traces into your broader observability stack</span></div><div><b>Retention controls</b><span>configure what is retained and what is redacted</span></div></div></div></section>
+<section class="next-chapter"><span>NEXT / 04</span><a href="governance.html"><b>Governance + Security</b><em>Put controls in the path →</em></a></section>
+</main>
+        <footer class="system-footer">
+      <div><strong>Aurora Systems</strong><span>Adaptive intelligence infrastructure</span></div>
+      <div class="footer-links"><a href="developers.html">Developers</a><a href="contact.html">Request access</a><a href="privacy.html">Privacy</a></div>
+      <div class="footer-status"><i></i><span>Control plane / ready</span></div>
+    </footer>
+      </div>
+      <div class="command-backdrop" data-command-backdrop hidden>
+      <section class="command-palette" role="dialog" aria-modal="true" aria-labelledby="command-title">
+        <div class="command-head"><span id="command-title">Go to</span><button type="button" data-command-close aria-label="Close command palette">Esc</button></div>
+        <div class="command-list">
+          <a href="index.html"><span>01</span><b>Platform</b><em>Workbench overview</em></a>
+          <a href="routing.html"><span>02</span><b>Routing</b><em>Runtime decisions</em></a>
+          <a href="observability.html"><span>03</span><b>Observability</b><em>Traces + evaluations</em></a>
+          <a href="governance.html"><span>04</span><b>Governance + Security</b><em>Policy + controls</em></a>
+          <a href="developers.html"><span>05</span><b>Developers</b><em>SDK + architecture</em></a>
+          <a href="company.html"><span>06</span><b>Company</b><em>Principles + team</em></a>
+          <a href="contact.html"><span>07</span><b>Request access</b><em>Infrastructure fit</em></a>
+        </div>
+      </section>
+    </div>
+      <script src="site.js"></script>
+    </body>
+    </html>
