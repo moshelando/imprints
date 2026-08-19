@@ -1,0 +1,52 @@
+/* Wild North — expedition outfitter, cinematic but practical. */
+:root{--wild-forest:#17281f;--wild-deep:#0d1913;--wild-cream:#eee7d5;--wild-orange:#d36b40;--wild-line:#5e6b60}
+body.wild-north{background:var(--wild-forest);color:var(--wild-cream);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.wild-north .site-header{height:76px;background:rgba(23,40,31,.91);backdrop-filter:blur(14px);border-bottom:1px solid rgba(238,231,213,.14);padding-inline:4vw;display:flex;align-items:center;justify-content:space-between}
+.wild-north .site-brand{font:400 28px/1 Georgia,serif;letter-spacing:-.03em;color:#f2ead8}
+.wild-north .desktop-nav{gap:24px}
+.wild-north .desktop-nav a{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:#b8c0b5;padding:10px 0;border-bottom:1px solid transparent}
+.wild-north .desktop-nav a:hover,.wild-north .desktop-nav a.active{color:#fff;border-bottom-color:var(--wild-orange)}
+.wild-north .desktop-nav a:after{display:none!important}
+.wild-north .hero{min-height:740px;position:relative;overflow:hidden;background:#1b2b22}
+.wild-north .hero .media{position:absolute;inset:0;height:100%;z-index:0}
+.wild-north .hero .media img{width:100%;height:100%;object-fit:cover}
+.wild-north .hero:after{background:linear-gradient(90deg,rgba(11,24,17,.88) 0%,rgba(11,24,17,.58) 47%,rgba(11,24,17,.12) 75%),linear-gradient(180deg,rgba(0,0,0,.05),rgba(13,25,19,.55))}
+.wild-north .hero-copy{position:relative;z-index:2;max-width:760px;padding:140px 4vw 90px}
+.wild-north .hero h1{font:400 clamp(70px,8vw,118px)/.9 Georgia,serif;letter-spacing:-.06em;margin:20px 0 26px}
+.wild-north .eyebrow{font-size:9px;letter-spacing:.16em;color:#e7ad8f;text-transform:uppercase}
+.wild-north .hero p,.wild-north .lede{font-size:17px;line-height:1.72;color:#d1d5cb;max-width:570px}
+.wild-north .btn{background:#efe7d4;color:#18251e;border:1px solid #efe7d4;border-radius:0;text-transform:uppercase;letter-spacing:.11em;font-size:9px;padding:14px 17px}
+.wild-north a.btn:hover{background:var(--wild-orange);border-color:var(--wild-orange);color:#fff}
+.wild-north .conditions-strip{background:#0f1b15;border-block:1px solid #36473a;color:#bdc5ba}
+.wild-north .section{padding:94px 4vw}
+.wild-north .section-title{font:400 clamp(46px,5.6vw,78px)/.97 Georgia,serif;letter-spacing:-.05em;max-width:900px}
+.wild-north .cards-3{gap:14px}
+.wild-north .feature-trip,.wild-north .trip-row,.wild-north .note-card,.wild-north .plan-panel,.wild-north .readiness{background:#1d3025;border:1px solid #3a4b3e;border-radius:2px;box-shadow:none}
+.wild-north a.trip-link,.wild-north a.note-link,.wild-north a.readiness-link{transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.wild-north a.trip-link:hover,.wild-north a.note-link:hover,.wild-north a.readiness-link:hover{background:#22382b;border-color:#8a765e;transform:translateY(-2px)}
+.wild-north .chip{border-color:#596b5d;color:#c9d0c5;background:transparent}
+.wild-north .site-footer{background:#0c1711;color:#a8b0a6;padding-inline:4vw;border-top:1px solid #304036}
+.wild-north :focus-visible{outline:2px solid var(--wild-orange);outline-offset:4px}
+@media(max-width:820px){
+ .wild-north .site-header{height:70px;padding-inline:20px}.wild-north .menu-button{display:block;background:transparent;color:#fff;border:1px solid #526255;padding:8px 11px}.wild-north .hero{min-height:650px}.wild-north .hero-copy{padding:110px 20px 68px}.wild-north .hero h1{font-size:clamp(62px,18vw,88px)}.wild-north .section{padding:68px 20px}.wild-north .site-footer{padding-inline:20px}
+}
+
+
+/* Tailored refinement pass — field-note cards must read like notes, not dark placeholders. */
+.wild-north .note-card{background:#f0e8d6;color:#1d3025;border-color:#c8bda8}
+.wild-north .note-card h3,.wild-north .note-card p{color:#1d3025}
+.wild-north .note-card p{opacity:.72}
+.wild-north a.note-link:hover{background:#fff6e4;border-color:#d36b40;transform:translateY(-2px)}
+@media(min-width:821px){
+  .wild-north .hero{min-height:680px}
+  .wild-north .hero-copy{padding-top:122px;padding-bottom:78px}
+  .wild-north .section{padding-top:82px;padding-bottom:82px}
+  .wild-north .feature-trip{min-height:0}
+}
+@media(max-width:820px){
+  .wild-north .hero{min-height:590px}
+  .wild-north .hero-copy{padding-top:94px;padding-bottom:58px}
+  .wild-north .hero h1{font-size:clamp(56px,16.5vw,78px)}
+  .wild-north .section{padding-top:58px;padding-bottom:58px}
+  .wild-north .note-card{min-height:0;padding:22px}
+}

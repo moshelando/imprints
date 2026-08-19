@@ -1,0 +1,57 @@
+/* Maison Noire — restrained editorial fashion, image first. */
+:root{--maison-black:#090909;--maison-ivory:#f1ede4;--maison-red:#8d1418;--maison-gray:#a9a49c}
+body.maison-noire{background:var(--maison-black);color:var(--maison-ivory);font-family:Arial,Helvetica,sans-serif}
+.maison-noire .site-header{height:76px;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid #2d2b29;padding-inline:3vw;display:flex;align-items:center;justify-content:space-between}
+.maison-noire .site-brand{font:400 24px/1 Didot,"Bodoni MT",Georgia,serif;text-transform:uppercase;letter-spacing:.20em;color:#f5f0e7}
+.maison-noire .desktop-nav{gap:24px}
+.maison-noire .desktop-nav a{font-size:9px;text-transform:uppercase;letter-spacing:.17em;color:#aaa49b;padding:10px 0;border-bottom:1px solid transparent}
+.maison-noire .desktop-nav a:hover,.maison-noire .desktop-nav a.active{color:#fff;border-bottom-color:#fff}
+.maison-noire .desktop-nav a:after{display:none!important}
+.maison-noire .hero{min-height:730px;grid-template-columns:.92fr 1.08fr;border-bottom:1px solid #2c2b29}
+.maison-noire .hero-copy{padding:70px 4vw;background:#741217;min-height:730px}
+.maison-noire .hero h1{font:400 clamp(72px,8vw,122px)/.82 Didot,"Bodoni MT",Georgia,serif;letter-spacing:-.06em;margin:26px 0;text-transform:none}
+.maison-noire .hero-copy p{font-size:15px;line-height:1.75;color:#eadfd8;max-width:440px}
+.maison-noire .hero .media{height:730px;background:#141311}
+.maison-noire .hero .media img{width:100%;height:100%;object-fit:cover}
+.maison-noire .btn{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.65);border-radius:0;text-transform:uppercase;letter-spacing:.16em;font-size:9px;padding:14px 17px}
+.maison-noire a.btn:hover{background:#fff;color:#111}
+.maison-noire .edition-rail{border-block:1px solid #2b2927;background:#0d0d0c;color:#a9a49c}
+.maison-noire .section{padding:96px 3vw;border-bottom:1px solid #282725}
+.maison-noire .section-title{font:400 clamp(48px,6vw,82px)/.92 Didot,"Bodoni MT",Georgia,serif;letter-spacing:-.055em;max-width:880px}
+.maison-noire .look-grid{gap:2px;background:#262421}
+.maison-noire .look{background:#0c0c0b;border:0}
+.maison-noire a.look-link{transition:opacity .18s ease}
+.maison-noire a.look-link:hover{opacity:.82}
+.maison-noire .look h3{font:400 28px/1 Didot,"Bodoni MT",Georgia,serif}
+.maison-noire .atelier,.maison-noire .service-panel,.maison-noire .private-note{border-radius:0;border-color:#393633;background:#11110f;box-shadow:none}
+.maison-noire .field input,.maison-noire .field textarea,.maison-noire .field select{background:#0f0f0e;border-color:#3a3733;color:#fff}
+.maison-noire .site-footer{background:#050505;color:#9f9a92;padding-inline:3vw;border-top:1px solid #2c2a28}
+.maison-noire :focus-visible{outline:1px solid #fff;outline-offset:4px}
+@media(max-width:820px){
+ .maison-noire .site-header{height:68px;padding-inline:20px}.maison-noire .site-brand{font-size:18px}.maison-noire .menu-button{display:block;background:transparent;border:1px solid #4a4641;color:#fff;padding:8px 11px}.maison-noire .hero{grid-template-columns:1fr;min-height:0}.maison-noire .hero-copy{min-height:470px;padding:54px 20px}.maison-noire .hero h1{font-size:clamp(66px,19vw,92px)}.maison-noire .hero .media{height:520px}.maison-noire .section{padding:68px 20px}.maison-noire .site-footer{padding-inline:20px}
+}
+
+
+/* Tailored refinement pass — keep the editorial drama, tighten the page rhythm. */
+@media(min-width:821px){
+  .maison-noire .hero{min-height:680px}
+  .maison-noire .hero-copy{min-height:680px;padding-top:58px;padding-bottom:58px}
+  .maison-noire .hero .media{height:680px}
+  .maison-noire .section{padding-top:82px;padding-bottom:82px}
+  .maison-noire .look-grid{gap:10px;margin-top:34px}
+  .maison-noire .look:nth-child(1) .media{height:560px}
+  .maison-noire .look:nth-child(2) .media{height:610px}
+  .maison-noire .look:nth-child(3) .media{height:520px}
+  .maison-noire .look h3{font-size:25px}
+  .maison-noire .atelier .media{height:570px}
+  .maison-noire .atelier-copy p{font-size:23px;max-width:32ch}
+  .maison-noire .detail-ledger b{margin-top:44px}
+}
+@media(max-width:820px){
+  .maison-noire .hero-copy{min-height:410px;padding-top:44px;padding-bottom:44px}
+  .maison-noire .hero .media{height:430px}
+  .maison-noire .section{padding-top:58px;padding-bottom:58px}
+  .maison-noire .look .media{height:410px!important}
+  .maison-noire .atelier .media{height:430px}
+  .maison-noire .atelier-copy p{font-size:22px}
+}
