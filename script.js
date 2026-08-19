@@ -1,66 +1,58 @@
 (() => {
-  const menuButton = document.querySelector('[data-menu-toggle]');
-  const menu = document.querySelector('[data-mobile-menu]');
-
-  const setMenu = (open) => {
-    if (!menuButton || !menu) return;
-    menuButton.setAttribute('aria-expanded', String(open));
-    menu.classList.toggle('is-open', open);
-    menu.setAttribute('aria-hidden', String(!open));
-  };
-
-  if (menuButton && menu) {
-    menuButton.addEventListener('click', () => {
-      setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const nav = document.querySelector('[data-nav]');
+  if (toggle && nav) {
+    const close = () => {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    toggle.addEventListener('click', () => {
+      const open = !nav.classList.contains('is-open');
+      nav.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
     });
-    menu.addEventListener('click', (event) => {
-      if (event.target.closest('a')) setMenu(false);
+    nav.addEventListener('click', event => {
+      if (event.target.closest('a')) close();
     });
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        setMenu(false);
-        menuButton.focus();
-      }
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') close();
     });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 760) setMenu(false);
+      if (window.innerWidth > 820) close();
     });
   }
 
-  const rows = [...document.querySelectorAll('[data-project-row]')];
-  const stageLink = document.querySelector('[data-stage-link]');
-  const stageImage = document.querySelector('[data-stage-image]');
-  const stageTitle = document.querySelector('[data-stage-title]');
-  const stageCount = document.querySelector('[data-stage-count]');
-  const stageScope = document.querySelector('[data-stage-scope]');
-
-  if (rows.length && stageLink && stageImage && stageTitle && stageCount && stageScope) {
-    let active = null;
-    let swapTimer = null;
-
-    const activate = (row) => {
-      if (!row || row === active) return;
-      active = row;
-      rows.forEach((item) => item.classList.toggle('is-active', item === row));
-      stageLink.classList.add('is-switching');
-      window.clearTimeout(swapTimer);
-      swapTimer = window.setTimeout(() => {
-        stageImage.src = row.dataset.image;
-        stageImage.alt = `${row.dataset.name} website preview`;
-        stageTitle.textContent = row.dataset.name;
-        stageCount.textContent = `${row.dataset.number} / 10`;
-        stageScope.textContent = row.dataset.sector;
-        stageLink.href = row.getAttribute('href');
-        stageLink.setAttribute('aria-label', `Open ${row.dataset.name} project site in a new tab`);
-        stageImage.addEventListener('load', () => stageLink.classList.remove('is-switching'), { once: true });
-        if (stageImage.complete) stageLink.classList.remove('is-switching');
-      }, 90);
+  const decisionNote = document.querySelector('[data-decision-note]');
+  const decisionSteps = [...document.querySelectorAll('[data-decision-step]')];
+  if (decisionNote && decisionSteps.length) {
+    const activate = step => {
+      decisionSteps.forEach(item => {
+        const active = item === step;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      decisionNote.textContent = step.dataset.note;
     };
-
-    rows.forEach((row) => {
-      row.addEventListener('mouseenter', () => activate(row));
-      row.addEventListener('focus', () => activate(row));
-    });
-    activate(rows[0]);
+    decisionSteps.forEach(step => step.addEventListener('click', () => activate(step)));
+    activate(decisionSteps[0]);
   }
+
+  const form = document.querySelector('[data-contact-form]');
+  const status = document.querySelector('[data-form-status]');
+  if (form && status) {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      const data = Object.fromEntries(new FormData(form).entries());
+      try { localStorage.setItem('northline-inquiry-draft', JSON.stringify({...data, savedAt: new Date().toISOString()})); } catch (_) {}
+      status.hidden = false;
+      status.textContent = 'Your inquiry has been saved in this browser for review. This static site has not sent it to Northline.';
+      status.focus();
+    });
+  }
+
+  document.querySelectorAll('[data-year]').forEach(node => node.textContent = new Date().getFullYear());
 })();
