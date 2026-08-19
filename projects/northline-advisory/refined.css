@@ -57,3 +57,11 @@ footer{background:#e7e2d8;border-top:1px solid var(--line)}
   .cta{padding:58px 0}
   .cta .cta-box{padding:28px 24px}
 }
+
+/* Curated portfolio polish */
+.nav-links a.active{color:var(--ink);border-bottom-color:var(--accent)}
+.situation-grid .card{min-height:250px}.situation-grid .card h3{margin-top:56px}
+.process-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:38px}.process-row article{padding:26px 30px 32px 0}.process-row article+article{border-left:1px solid var(--line);padding-left:30px}.process-row span{font-size:10px;letter-spacing:.12em;color:var(--accent)}.process-row h3{font:400 30px/1 Georgia,serif;margin:52px 0 10px}.process-row p{color:var(--muted);line-height:1.65}
+.coverage-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:24px}.coverage-grid>div{padding:24px 30px 0 0}.coverage-grid>div+div{border-left:1px solid var(--line);padding-left:30px}.coverage-grid strong{display:block;font:400 24px/1.1 Georgia,serif;margin-bottom:10px}.coverage-grid span{color:var(--muted);font-size:13px;line-height:1.6}
+.northline-footer{grid-template-columns:1fr auto 1fr;align-items:start}.northline-footer .footer-brand{display:flex;flex-direction:column;gap:5px}.northline-footer .footer-brand strong{font:400 18px/1 Georgia,serif}.northline-footer .footer-brand span,.northline-footer .footer-meta{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#6f756f}.northline-footer .footer-links{display:flex;gap:20px}.northline-footer .footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.08em}.northline-footer .footer-meta{text-align:right}
+@media(max-width:820px){.process-row,.coverage-grid,.northline-footer{grid-template-columns:1fr}.process-row article+article,.coverage-grid>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}.process-row h3{margin-top:30px}.northline-footer{gap:20px}.northline-footer .footer-meta{text-align:left}.northline-footer .footer-links{flex-wrap:wrap}}
