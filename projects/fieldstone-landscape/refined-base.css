@@ -1,0 +1,69 @@
+/* Fieldstone — grounded residential landscape studio. */
+:root{--forest:#203d2f;--forest-2:#132a20;--cream:#f0e9da;--sand:#d5c5a8;--stone:#9b9383;--rust:#a65d3e;--ink:#1b2c22;--line:#c9bca5;--white:#fff;--max:1240px}
+body{background:var(--cream);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif}
+.site-header{background:rgba(240,233,218,.94);backdrop-filter:blur(14px);border-bottom:1px solid #c8baa3}
+.nav{height:80px}
+.brand{font:400 27px/1 Georgia,serif;letter-spacing:-.03em;color:#264333}
+.brand span{letter-spacing:.15em;color:#7a6c58}
+.nav-links{gap:24px}
+.nav-links a{font-size:10px;text-transform:uppercase;letter-spacing:.09em;padding:10px 0;border-bottom:1px solid transparent}
+.nav-links a:hover,.nav-links a.active{border-color:var(--rust);color:#7e432d}
+.nav-cta{background:var(--forest);color:#fff;padding:12px 15px;text-transform:uppercase;font-size:9px;letter-spacing:.09em}
+.hero{grid-template-columns:.78fr 1.22fr;grid-template-rows:minmax(640px,76vh) auto;background:var(--forest)}
+.hero-copy{padding:88px 5vw;display:flex;flex-direction:column;justify-content:center}
+.hero h1,.page-hero h1{font:400 clamp(60px,7.5vw,108px)/.9 Georgia,serif;letter-spacing:-.055em}
+.hero-copy>p{font-size:17px;line-height:1.7;color:#d8dfd8;max-width:580px}
+.hero-media{min-height:640px;overflow:hidden}
+.hero-media img{transition:transform .7s ease}
+.hero:hover .hero-media img{transform:none}
+.button{border-radius:0;text-transform:uppercase;letter-spacing:.09em;font-size:9px;min-height:44px}
+.button.light{background:#f5f0e7;color:#244031;border-color:#f5f0e7}
+.button.ghost{border-color:#83988a;color:#fff}
+.season-strip{background:#d8c8ad;color:#314b3d;border-block:1px solid #c2b196}
+.section{padding:96px 0}
+.section-head{border-top:1px solid var(--line);padding-top:22px}
+.section-head h2,.project-feature h2,.materials h2,.cta h2{font:400 clamp(44px,5.2vw,70px)/.98 Georgia,serif;letter-spacing:-.045em}
+.service-grid{gap:14px}
+.service{background:#f7f2e8;border:1px solid var(--line);border-radius:0;min-height:300px}
+a.service:hover{background:#fff;border-color:#aa9272;transform:translateY(-2px)}
+.service h3{font:400 28px/1.1 Georgia,serif}
+.project-feature{background:#1f3a2d;color:#fff}
+.project-feature-grid{gap:70px}
+.project-feature figure{border-radius:0;box-shadow:none;border:1px solid #678072}
+.process-grid article{border-top:1px solid #a99f8d;padding-top:20px}
+.material-grid,.projects-grid{gap:14px}
+.projects-grid article,.material-grid article,.estimator{border-radius:0;box-shadow:none}
+.cta{background:#a65d3e;color:#fff}
+footer{background:#dcd0bb;border-top:1px solid #c5b79d}
+:focus-visible{outline:2px solid var(--rust);outline-offset:4px}
+@media(max-width:820px){.nav{height:72px}.hero{grid-template-columns:1fr;grid-template-rows:auto 430px auto}.hero-copy{padding:60px 20px}.hero h1{font-size:clamp(58px,17vw,82px)}.hero-media{min-height:0}.section{padding:68px 0}.project-feature-grid{grid-template-columns:1fr;gap:34px}}
+
+
+/* Tailored refinement pass — slightly calmer service and process pacing. */
+@media(min-width:821px){
+  .hero{grid-template-rows:minmax(590px,70vh) auto}
+  .hero-copy{padding-top:72px;padding-bottom:72px}
+  .hero-media{min-height:590px}
+  .section{padding-top:82px;padding-bottom:82px}
+  .service{min-height:270px;padding:28px}
+  .project-feature-grid{gap:58px}
+  .process-grid article{padding-right:24px}
+}
+@media(max-width:820px){
+  .hero{grid-template-rows:auto 380px auto}
+  .hero-copy{padding-top:52px;padding-bottom:48px}
+  .hero h1{font-size:clamp(54px,15.5vw,76px)}
+  .section{padding-top:58px;padding-bottom:58px}
+  .service{min-height:220px}
+  .project-feature{padding-top:58px;padding-bottom:58px}
+  .process-grid article{padding-top:18px;padding-bottom:22px}
+}
+
+/* Curated portfolio polish */
+.reality-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:36px}.reality-grid article{padding:26px 26px 30px 0}.reality-grid article+article{border-left:1px solid var(--line);padding-left:26px}.reality-grid b{font:400 27px/1 Georgia,serif}.reality-grid p{color:#657367;line-height:1.65;font-size:13px}
+.projects-grid article>div{display:flex;flex-direction:column}.project-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-top:1px solid var(--line);margin:18px 0 0;padding-top:14px}.project-meta div{display:block}.project-meta dt{font-size:8px;text-transform:uppercase;letter-spacing:.1em;color:#7c7569}.project-meta dd{margin:4px 0 0;font-size:12px;color:#314b3d}
+.fit-list{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:36px}.fit-list span{padding:20px 24px 20px 0;border-bottom:1px solid var(--line);font:400 20px/1.2 Georgia,serif}.fit-list span:nth-child(3n+2),.fit-list span:nth-child(3n+3){padding-left:24px;border-left:1px solid var(--line)}
+.fieldstone-footer{grid-template-columns:1fr auto 1fr;align-items:start}.fieldstone-footer>div:first-child p{margin:8px 0 0;color:#6f766e;font-size:9px;text-transform:uppercase;letter-spacing:.09em}.fieldstone-footer .footer-links{display:flex;gap:22px}.fieldstone-footer .footer-links a{font-size:10px;text-transform:uppercase;letter-spacing:.08em}.fieldstone-footer small{text-align:right;line-height:1.6}
+.next-steps{background:#e5dbc8}
+@media(max-width:820px){.reality-grid{grid-template-columns:1fr 1fr}.reality-grid article:nth-child(3){border-left:0;border-top:1px solid var(--line);padding-left:0}.reality-grid article:nth-child(4){border-top:1px solid var(--line)}.fit-list{grid-template-columns:1fr}.fit-list span:nth-child(n){padding-left:0;border-left:0}.fieldstone-footer{grid-template-columns:1fr;gap:20px}.fieldstone-footer .footer-links{flex-wrap:wrap}.fieldstone-footer small{text-align:left}}
+@media(max-width:520px){.reality-grid{grid-template-columns:1fr}.reality-grid article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}}

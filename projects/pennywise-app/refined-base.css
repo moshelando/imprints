@@ -1,0 +1,69 @@
+/* Pennywise — friendly consumer finance without toy-like excess. */
+:root{--penny-indigo:#4e42e8;--penny-ink:#20233f;--penny-lav:#f2efff;--penny-mint:#d8f5df;--penny-peach:#ffdcbc;--penny-line:#cdc9eb}
+body.pennywise-app{background:var(--penny-lav);color:var(--penny-ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.pennywise-app .site-header{height:76px;background:rgba(242,239,255,.91);backdrop-filter:blur(15px);border-bottom:1px solid var(--penny-line);padding-inline:max(4vw,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between}
+.pennywise-app .site-brand{font-size:25px;font-weight:850;letter-spacing:-.05em;color:#3428c8}
+.pennywise-app .site-brand:after{content:"·";color:#f29b72;margin-left:3px}
+.pennywise-app .desktop-nav{gap:6px}
+.pennywise-app .desktop-nav a{font-size:11px;font-weight:700;color:#5a5e7a;padding:9px 12px;border-radius:999px}
+.pennywise-app .desktop-nav a:hover,.pennywise-app .desktop-nav a.active{background:#fff;color:#3327c6;box-shadow:0 0 0 1px #d8d3f5}
+.pennywise-app .desktop-nav a:after{display:none!important}
+.pennywise-app .hero{max-width:1160px;margin:auto;padding:78px 0 88px;grid-template-columns:.9fr 1.1fr;gap:70px;min-height:700px}
+.pennywise-app .hero h1{font-size:clamp(64px,7vw,104px);line-height:.93;letter-spacing:-.07em;color:#25284a;margin:20px 0 25px}
+.pennywise-app .eyebrow{color:#726ab0;font-size:9px;letter-spacing:.14em}
+.pennywise-app .lede{font-size:18px;line-height:1.7;color:#626684;max-width:570px}
+.pennywise-app .hero .media{height:560px;border:1px solid #c9c3ed;border-radius:34px;box-shadow:0 28px 70px rgba(78,66,232,.13);background:#fff;overflow:hidden}
+.pennywise-app .hero .media img{width:100%;height:100%;object-fit:cover}
+.pennywise-app .btn{border-radius:999px;background:var(--penny-indigo);color:#fff;border:1px solid var(--penny-indigo);font-size:11px;padding:13px 19px}
+.pennywise-app a.btn:hover{background:#3d32ca}
+.pennywise-app .section{padding:92px max(4vw,calc((100vw - 1160px)/2))}
+.pennywise-app .section-title{font-size:clamp(44px,5.5vw,74px);line-height:.98;letter-spacing:-.06em;max-width:820px}
+.pennywise-app .cards-2,.pennywise-app .cards-3{gap:16px}
+.pennywise-app .feature-card,.pennywise-app .calculator,.pennywise-app .security-panel,.pennywise-app .quote{border-radius:22px;border:1px solid var(--penny-line);background:rgba(255,255,255,.72);box-shadow:none}
+.pennywise-app a.feature-link{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.pennywise-app a.feature-link:hover{transform:translateY(-3px);border-color:#ada5e8;box-shadow:0 16px 40px rgba(70,60,180,.08)}
+.pennywise-app .feature-card h3{font-size:25px;letter-spacing:-.04em}
+.pennywise-app .feature-card p{color:#676b87;line-height:1.65}
+.pennywise-app .highlight{background:var(--penny-mint)}
+.pennywise-app .paper{background:#fffaf1}
+.pennywise-app .site-footer{background:#282548;color:#d9d6ef;padding-inline:max(4vw,calc((100vw - 1160px)/2));border-top:0}
+.pennywise-app :focus-visible{outline:2px solid var(--penny-indigo);outline-offset:4px}
+@media(max-width:820px){
+ .pennywise-app .site-header{height:70px;padding-inline:20px}.pennywise-app .menu-button{display:block;background:#fff;border:1px solid #c7c1ea;color:#3428c8;border-radius:999px;padding:8px 12px}.pennywise-app .hero{width:calc(100% - 40px);grid-template-columns:1fr;gap:36px;padding:54px 0 62px;min-height:0}.pennywise-app .hero h1{font-size:clamp(58px,17vw,82px)}.pennywise-app .hero .media{height:430px}.pennywise-app .section{padding:68px 20px}.pennywise-app .site-footer{padding-inline:20px}
+}
+
+
+/* Tailored refinement pass — fix contrast and reduce oversized product-demo blocks. */
+.pennywise-app .calculator{color:var(--penny-ink);background:#fffdf8}
+.pennywise-app .calculator output{color:#2f34a0}
+.pennywise-app .calculator .eyebrow{color:#726ab0}
+.pennywise-app .calculator input[type=range]{accent-color:var(--penny-indigo)}
+@media(min-width:821px){
+  .pennywise-app .hero{padding-top:72px;padding-bottom:76px;min-height:650px}
+  .pennywise-app .hero .media{height:520px}
+  .pennywise-app .section{padding-top:80px;padding-bottom:80px}
+  .pennywise-app .feature-card{min-height:255px}
+  .pennywise-app .feature-card h3{margin-top:54px}
+  .pennywise-app .calculator{padding:30px}
+  .pennywise-app .calculator output{font-size:52px}
+}
+@media(max-width:820px){
+  .pennywise-app .hero h1{font-size:clamp(52px,15.5vw,72px)}
+  .pennywise-app .hero .media{height:370px}
+  .pennywise-app .section{padding-top:58px;padding-bottom:58px}
+  .pennywise-app .feature-card{min-height:210px;padding:21px}
+  .pennywise-app .feature-card h3{margin-top:42px}
+  .pennywise-app .calculator{padding:24px}
+  .pennywise-app .calculator output{font-size:46px}
+}
+
+/* Curated portfolio polish */
+.pennywise-app .nav-start{background:var(--penny-indigo)!important;color:#fff!important;box-shadow:none!important}
+.pennywise-app .secondary-action{background:#fff;color:var(--penny-indigo);border-color:#c9c3ed;margin-left:8px}.pennywise-app a.secondary-action:hover{background:#f9f7ff}
+.pennywise-app .penny-cta{display:grid;grid-template-columns:1fr auto;gap:44px;align-items:end;background:#fffaf1}.pennywise-app .penny-cta .lede{margin-bottom:0}
+.pennywise-app .feature-detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}.pennywise-app .feature-detail-grid article{background:#fff;border:1px solid var(--penny-line);padding:22px;border-radius:18px}.pennywise-app .feature-detail-grid span{font-size:9px;letter-spacing:.12em;color:#726ab0}.pennywise-app .feature-detail-grid strong{display:block;font-size:34px;margin:40px 0 8px;letter-spacing:-.05em}.pennywise-app .feature-detail-grid p{color:#676b87;line-height:1.6;font-size:13px}
+.pennywise-app .faq-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--penny-line);margin-top:34px}.pennywise-app .faq-grid article{padding:24px 30px 24px 0;border-bottom:1px solid var(--penny-line)}.pennywise-app .faq-grid article:nth-child(even){padding-left:30px;border-left:1px solid var(--penny-line)}.pennywise-app .faq-grid b{font-size:20px}.pennywise-app .faq-grid p{color:#676b87;line-height:1.65}
+.pennywise-app .privacy-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px;max-width:900px}.pennywise-app .privacy-choice-grid>div{background:#fff;border:1px solid var(--penny-line);border-radius:20px;padding:24px}.pennywise-app .privacy-choice-grid b{font-size:20px}.pennywise-app .privacy-choice-grid p{color:#676b87;line-height:1.6;min-height:50px}
+.pennywise-app .start-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}.pennywise-app .start-panel{background:#fff;border:1px solid var(--penny-line);border-radius:24px;padding:30px;box-shadow:0 24px 60px rgba(78,66,232,.08)}.pennywise-app .start-panel input,.pennywise-app .start-panel select{background:#fbfaff;border-color:#c9c3ed;border-radius:10px;color:var(--penny-ink)}.pennywise-app .start-points{display:grid;gap:10px;margin-top:30px;color:#676b87;font-size:12px}.pennywise-app .site-footer .footer-links{row-gap:10px}.pennywise-app .site-footer .footer-links a{font-size:11px}.pennywise-app .site-footer .footer-links a:hover{color:#fff}
+@media(max-width:820px){.pennywise-app .secondary-action{margin-left:6px}.pennywise-app .penny-cta,.pennywise-app .start-layout{grid-template-columns:1fr}.pennywise-app .feature-detail-grid{grid-template-columns:1fr 1fr}.pennywise-app .faq-grid,.pennywise-app .privacy-choice-grid{grid-template-columns:1fr}.pennywise-app .faq-grid article:nth-child(even){padding-left:0;border-left:0}.pennywise-app .privacy-choice-grid p{min-height:0}}
+@media(max-width:520px){.pennywise-app .feature-detail-grid{grid-template-columns:1fr}.pennywise-app .secondary-action{margin:10px 0 0}.pennywise-app .hero .btn{display:inline-flex}}
