@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="t d">
+<title id="t">Casa Rosso dining room at night with a long table and warm lamps</title><desc id="d">Casa Rosso dining room at night with a long table and warm lamps</desc>
+<defs>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="7" result="n"/><feColorMatrix in="n" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .12 0"/><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+  <linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#160f0c"/><stop offset=".55" stop-color="#3b1714"/><stop offset="1" stop-color="#6a2d1d"/></linearGradient>
+  <radialGradient id="lamp"><stop stop-color="#ffd79a" stop-opacity=".96"/><stop offset="1" stop-color="#ffd79a" stop-opacity="0"/></radialGradient>
+</defs>
+
+<rect width="1600" height="1100" fill="url(#night)"/>
+<rect x="0" y="0" width="1600" height="170" fill="#120b09"/>
+<g opacity=".9"><ellipse cx="320" cy="260" rx="260" ry="260" fill="url(#lamp)"/><ellipse cx="820" cy="210" rx="300" ry="300" fill="url(#lamp)"/><ellipse cx="1310" cy="270" rx="260" ry="260" fill="url(#lamp)"/></g>
+<g fill="#b27b3a"><circle cx="320" cy="210" r="20"/><circle cx="820" cy="175" r="22"/><circle cx="1310" cy="220" r="20"/></g>
+<path d="M110 900c270-140 540-185 790-110 235 70 410 25 600-65v375H110z" fill="#31110f"/>
+<ellipse cx="800" cy="780" rx="560" ry="180" fill="#6f211b"/>
+<ellipse cx="800" cy="748" rx="500" ry="146" fill="#ead9bd"/>
+<ellipse cx="800" cy="748" rx="340" ry="100" fill="#f6ecda" opacity=".92"/>
+<g fill="none" stroke="#fff9ef" stroke-width="7" opacity=".55"><path d="M545 710q45-115 90 0"/><path d="M980 710q45-115 90 0"/></g>
+<g fill="#1f1411"><circle cx="350" cy="540" r="84"/><path d="M255 875q95-290 190 0z"/><circle cx="1230" cy="545" r="78"/><path d="M1145 875q90-280 180 0z"/></g>
+<g fill="#485139"><rect x="710" y="515" width="22" height="160" rx="10"/><ellipse cx="721" cy="510" rx="64" ry="46"/><rect x="865" y="520" width="18" height="150" rx="9"/><ellipse cx="874" cy="515" rx="55" ry="40"/></g>
+
+<rect width="1600" height="1100" fill="#fff" opacity=".025" filter="url(#grain)"/>
+</svg>
