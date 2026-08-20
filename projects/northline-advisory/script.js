@@ -7,7 +7,12 @@ if(toggle&&links){
   addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 }
 const current=window.location.pathname.split('/').pop()||'index.html';
-document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===current)a.classList.add('active')});
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  if(a.getAttribute('href')===current){
+    a.classList.add('active');
+    a.setAttribute('aria-current','page');
+  }
+});
 const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
 
 const form=document.querySelector('[data-contact-form]');

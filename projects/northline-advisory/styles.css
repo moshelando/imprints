@@ -6,6 +6,8 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button,input,select,textarea{font:inherit}
+.skip-link{position:fixed;left:16px;top:12px;z-index:100;transform:translateY(-180%);background:var(--ink);color:#fff;padding:10px 14px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.skip-link:focus{transform:translateY(0)}
 .shell{width:min(calc(100% - 40px),var(--max));margin:0 auto}
 .eyebrow{font-size:10px;line-height:1;text-transform:uppercase;letter-spacing:.17em;font-weight:800;color:var(--accent)}
 .light-eyebrow{color:#c6a899}
