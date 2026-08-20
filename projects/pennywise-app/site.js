@@ -115,7 +115,7 @@
 
   const consentStyles = document.createElement('link');
   consentStyles.rel = 'stylesheet';
-  consentStyles.href = 'consent.css';
+  consentStyles.href = 'consent.css?v=2';
   document.head.append(consentStyles);
 
   document.querySelectorAll('[data-consent-choice]').forEach((button) => {
