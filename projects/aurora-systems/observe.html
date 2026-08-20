@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Aurora Systems observability concept for complete AI execution traces.">
+  <title>Observe — Aurora Systems</title>
+  <link rel="stylesheet" href="styles.css?v=20260820"><link rel="stylesheet" href="refined.css?v=20260820">
+</head>
+<body class="aurora-systems">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mobile-bar"><a class="mobile-brand" href="index.html">A/ AURORA SYSTEMS</a><button class="drawer-button" type="button" aria-controls="control-rail" aria-expanded="false" data-drawer-button>Index +</button></div>
+  <aside class="control-rail" id="control-rail" aria-label="Primary">
+    <a class="rail-brand" href="index.html" aria-label="Aurora Systems platform"><span class="rail-mark">A/</span></a>
+    <nav class="rail-nav">
+      <a class="rail-link" href="index.html"><span class="rail-code">01</span><span class="rail-label">Platform</span></a>
+      <a class="rail-link" href="observe.html" aria-current="page"><span class="rail-code">02</span><span class="rail-label">Observe</span></a>
+      <a class="rail-link" href="govern.html"><span class="rail-code">03</span><span class="rail-label">Govern</span></a>
+      <a class="rail-link" href="security.html"><span class="rail-code">04</span><span class="rail-label">Security</span></a>
+      <a class="rail-link" href="developers.html"><span class="rail-code">05</span><span class="rail-label">Developers</span></a>
+      <a class="rail-link" href="company.html"><span class="rail-code">06</span><span class="rail-label">Company</span></a>
+      <a class="rail-link" href="contact.html"><span class="rail-code">07</span><span class="rail-label">Contact</span></a>
+    </nav><div class="rail-foot">CONTROL<br>07 / 07</div>
+  </aside>
+  <div class="page-shell">
+    <div class="system-bar"><span class="system-state"><i></i>Observe / trace view</span><span>Sample execution / synthetic</span></div>
+    <main id="main">
+      <header class="page-header">
+        <p class="page-kicker">Observe / execution evidence</p>
+        <h1>Every branch, <em>one trace.</em></h1>
+        <div class="page-intro"><a class="command-link" href="#trace-view">Inspect sample trace ↓</a><p>Understand a workflow as the system experienced it: messages, retrieval, tools, routing, retries, policy decisions, evaluations, and outcome context in sequence.</p></div>
+      </header>
+      <section class="section" id="trace-view">
+        <p class="page-kicker">Trace / sample 8F2A</p>
+        <h2 class="section-heading">The execution is the unit of debugging.</h2>
+        <div class="trace-viewer">
+          <div class="trace-list">
+            <div class="panel-head"><span>Spans</span><span>05</span></div>
+            <div class="trace-item"><span>00</span><b>request.accepted</b></div>
+            <div class="trace-item"><span>01</span><b>policy.resolved</b></div>
+            <div class="trace-item active"><span>02</span><b>route.selected</b></div>
+            <div class="trace-item"><span>03</span><b>tool.authorized</b></div>
+            <div class="trace-item"><span>04</span><b>output.evaluated</b></div>
+          </div>
+          <div class="trace-detail">
+            <div class="panel-head"><span>Timeline</span><span class="sample-badge">Sample data</span></div>
+            <div class="trace-timeline">
+              <article class="trace-event"><time>T+000</time><span class="axis"></span><div><h3>request.accepted</h3><p>Input, product context, environment, and user state enter the trace envelope.</p></div></article>
+              <article class="trace-event"><time>T+012</time><span class="axis"></span><div><h3>policy.resolved</h3><p>Identity, region, tool scope, and response constraints resolve before routing.</p></div></article>
+              <article class="trace-event"><time>T+018</time><span class="axis"></span><div><h3>route.selected</h3><p>Candidate B is selected from the illustrative pool using the active decision policy.</p></div></article>
+              <article class="trace-event"><time>T+241</time><span class="axis"></span><div><h3>tool.authorized</h3><p>The refund lookup remains within the approved action boundary.</p></div></article>
+              <article class="trace-event"><time>T+682</time><span class="axis"></span><div><h3>output.evaluated</h3><p>Deterministic checks and an application-defined quality signal attach to the final span.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">What the trace keeps together</p>
+        <div class="three-column">
+          <article class="system-step"><span>01 / STRUCTURE</span><h3>Branch-aware.</h3><p>Parent and child spans preserve retries, fallbacks, parallel tools, and evaluation branches.</p></article>
+          <article class="system-step"><span>02 / CONTEXT</span><h3>Outcome-aware.</h3><p>Application metadata and user outcomes sit beside model and tool activity instead of in another system.</p></article>
+          <article class="system-step"><span>03 / EXPORT</span><h3>Stack-aware.</h3><p>A stable trace model can feed the logs, metrics, and review workflows an engineering team already operates.</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">From evidence to action</p><h2 class="section-heading">Use the same trace to debug, evaluate, and govern.</h2>
+        <div class="capability-ledger">
+          <a class="capability-link" href="govern.html"><span class="index">03</span><h3>Resolve policy</h3><p>See which rules produced the route and what boundary each tool executed within.</p><span class="arrow">→</span></a>
+          <a class="capability-link" href="security.html"><span class="index">04</span><h3>Review boundaries</h3><p>Connect identity, data scope, and authorization evidence to the execution that used them.</p><span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Aurora Systems / product concept</span><div class="footer-links"><a href="index.html">Platform</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><span class="footer-note">Trace values shown here are synthetic interface examples, not production performance data.</span></footer>
+  </div>
+  <script src="site.js?v=20260820"></script>
+</body>
+</html>

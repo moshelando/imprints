@@ -1,4 +1,51 @@
-<!DOCTYPE html>
-
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Aurora Systems privacy and cookie information." name="description"/><title>Privacy — Aurora Systems</title><link href="styles.css" rel="stylesheet"/><link href="refined.css" rel="stylesheet"/>
-</head><body class="aurora-systems"><header class="site-header"><a class="site-brand" href="index.html">Aurora Systems</a><button aria-expanded="false" aria-label="Toggle menu" class="menu-button" data-menu-button="" type="button">Menu</button><nav class="desktop-nav"><a href="index.html">Platform</a><a href="product.html">Product</a><a href="company.html">Company</a><a href="contact.html">Contact</a></nav><nav class="mobile-nav" data-mobile-nav=""><a href="index.html">Platform</a><a href="product.html">Product</a><a href="company.html">Company</a><a href="contact.html">Contact</a></nav></header><main><section class="section"><div class="eyebrow">Privacy</div><h1 class="section-title">Clear controls.<br/>Minimal collection.</h1><p class="lede">Aurora uses essential browser storage to keep forms, navigation, and privacy choices working. Optional analytics are used only after consent to understand which product areas receive attention.</p></section><section class="section alt"><div class="cards-3"><article class="feature-card"><div class="num">01 / ESSENTIAL</div><h3>Required storage</h3><p>Used for privacy choices, submitted form state, and core site behavior.</p></article><article class="feature-card"><div class="num">02 / ANALYTICS</div><h3>Optional measurement</h3><p>Enabled only when allowed. Used to understand aggregate site and product interest.</p></article><article class="feature-card"><div class="num">03 / CONTROL</div><h3>Your choice</h3><p>Change your preference at any time from Cookie settings in the footer.</p></article></div></section><section class="section" id="cookie-settings"><div class="eyebrow">Cookie settings</div><h2 class="section-title">Choose what this browser stores.</h2><p class="lede">Essential storage supports privacy choices and core site behavior. Anonymous product analytics are optional.</p><div class="consent-settings"><div><b>Essential only</b><p>Core browser storage stays on. Optional analytics remain off.</p><button class="btn secondary" data-consent-choice="essential" type="button">Use essential only</button></div><div><b>Essential + analytics</b><p>Allow anonymous aggregate measurement of product and page interest.</p><button class="btn primary" data-consent-choice="analytics" type="button">Allow analytics</button></div></div><div class="form-status consent-status-message" data-consent-status="" hidden=""></div></section><section class="section"><h2 class="section-title">Data requests</h2><p class="lede">For privacy questions, access requests, or deletion requests, use the contact form and select General enquiry.</p><a class="btn secondary" href="contact.html">Contact Aurora →</a></section></main><footer class="site-footer"><div><strong>Aurora Systems</strong><p>Adaptive intelligence infrastructure</p></div><div class="footer-links"><a href="index.html">Platform</a><a href="product.html">Product</a><a href="company.html">Company</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="privacy.html#cookie-settings">Cookie settings</a></div><div class="footer-meta">Production AI infrastructure<br/>© 2026 Aurora Systems</div></footer><script src="site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Privacy information for the Aurora Systems portfolio concept.">
+  <title>Privacy — Aurora Systems</title>
+  <link rel="stylesheet" href="styles.css?v=20260820"><link rel="stylesheet" href="refined.css?v=20260820">
+</head>
+<body class="aurora-systems">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mobile-bar"><a class="mobile-brand" href="index.html">A/ AURORA SYSTEMS</a><button class="drawer-button" type="button" aria-controls="control-rail" aria-expanded="false" data-drawer-button>Index +</button></div>
+  <aside class="control-rail" id="control-rail" aria-label="Primary">
+    <a class="rail-brand" href="index.html" aria-label="Aurora Systems platform"><span class="rail-mark">A/</span></a>
+    <nav class="rail-nav">
+      <a class="rail-link" href="index.html"><span class="rail-code">01</span><span class="rail-label">Platform</span></a>
+      <a class="rail-link" href="observe.html"><span class="rail-code">02</span><span class="rail-label">Observe</span></a>
+      <a class="rail-link" href="govern.html"><span class="rail-code">03</span><span class="rail-label">Govern</span></a>
+      <a class="rail-link" href="security.html"><span class="rail-code">04</span><span class="rail-label">Security</span></a>
+      <a class="rail-link" href="developers.html"><span class="rail-code">05</span><span class="rail-label">Developers</span></a>
+      <a class="rail-link" href="company.html"><span class="rail-code">06</span><span class="rail-label">Company</span></a>
+      <a class="rail-link" href="contact.html"><span class="rail-code">07</span><span class="rail-label">Contact</span></a>
+    </nav><div class="rail-foot">CONTROL<br>07 / 07</div>
+  </aside>
+  <div class="page-shell">
+    <div class="system-bar"><span class="system-state"><i></i>Privacy / current build</span><span>No analytics connection configured</span></div>
+    <main id="main">
+      <header class="page-header">
+        <p class="page-kicker">Privacy / portfolio demonstration</p>
+        <h1>Minimal collection means <em>no pretending.</em></h1>
+        <div class="page-intro"><a class="command-link" href="#data-ledger">Read the data ledger ↓</a><p>The current Aurora Systems concept does not send analytics events, transmit form content, create accounts, or connect to a production service.</p></div>
+      </header>
+      <section class="section" id="data-ledger">
+        <p class="page-kicker">Current behavior</p>
+        <h2 class="section-heading">What this static site does with data.</h2>
+        <div class="privacy-ledger">
+          <article class="privacy-row"><h2>Page viewing</h2><p>The static pages render in the browser. This project does not include a client analytics library or event endpoint.</p></article>
+          <article class="privacy-row"><h2>Contact form</h2><p>Submission is intercepted locally to demonstrate interface feedback. Values are not sent and are not written to local storage.</p></article>
+          <article class="privacy-row"><h2>Code copy</h2><p>The developer-page copy button writes only the visible concept snippet to the browser clipboard when selected.</p></article>
+          <article class="privacy-row"><h2>Legacy preference</h2><p>An earlier demo build stored a local consent choice under <code>aurora-consent-v1</code>. The current build does not use it.</p></article>
+        </div>
+        <div style="margin-top:28px"><button class="command-button" type="button" data-clear-preferences>Clear legacy preference</button><p class="form-status" data-preference-status role="status" aria-live="polite" hidden></p></div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">Scope</p><h2 class="section-heading">This is not a legal policy for an operating company.</h2><p class="section-deck">Aurora Systems is a fictional portfolio concept. A production company would need a policy tied to its actual legal entity, vendors, infrastructure, data flows, retention, user rights, and jurisdiction.</p>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Aurora Systems / product concept</span><div class="footer-links"><a href="index.html">Platform</a><a href="company.html">Company</a><a href="contact.html">Contact</a></div><span class="footer-note">No operating company or production privacy program is represented.</span></footer>
+  </div>
+  <script src="site.js?v=20260820"></script>
+</body>
+</html>

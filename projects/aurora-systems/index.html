@@ -1,361 +1,98 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Adaptive intelligence infrastructure for production AI systems." name="description"/>
-<title>
-   Platform — Aurora Systems
-  </title>
-<link href="styles.css" rel="stylesheet"/>
-<link href="refined.css" rel="stylesheet"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Aurora Systems — an operational control surface concept for production AI workflows.">
+  <title>Platform — Aurora Systems</title>
+  <link rel="stylesheet" href="styles.css?v=20260820">
+  <link rel="stylesheet" href="refined.css?v=20260820">
 </head>
 <body class="aurora-systems">
-<header class="site-header">
-<a class="site-brand" href="index.html">
-    Aurora Systems
-   </a>
-<button aria-expanded="false" aria-label="Toggle menu" class="menu-button" data-menu-button="" type="button">
-    Menu
-   </button>
-<nav class="desktop-nav">
-<a class="active" href="index.html">
-     Platform
-    </a>
-<a class="" href="product.html">
-     Product
-    </a>
-<a class="" href="company.html">
-     Company
-    </a>
-<a class="" href="contact.html">
-     Contact
-    </a>
-</nav>
-<nav class="mobile-nav" data-mobile-nav="">
-<a class="active" href="index.html">
-     Platform
-    </a>
-<a class="" href="product.html">
-     Product
-    </a>
-<a class="" href="company.html">
-     Company
-    </a>
-<a class="" href="contact.html">
-     Contact
-    </a>
-</nav>
-</header>
-<main>
-<section class="hero">
-<div>
-<div class="eyebrow">
-      Inference · orchestration · observability
-     </div>
-<h1>
-      AI systems
-      <br/>
-      that
-      <span class="gradient">
-       adapt.
-      </span>
-</h1>
-<p class="lede">
-      Aurora is an infrastructure layer for teams shipping agentic products. Route models, observe behavior, enforce policy, and evolve workflows from one intelligent control plane.
-     </p>
-<div class="chip-row" style="margin-top:28px">
-<a class="btn primary" href="contact.html">
-       Request access ↗
-      </a>
-<a class="btn secondary" href="product.html">
-       Explore platform
-      </a>
-</div>
-</div>
-<figure class="media hero-art">
-<img alt="Luminous abstract systems artwork" src="assets/hero-orbit.svg"/>
-</figure>
-</section>
-<div aria-label="Platform capabilities" class="signal-rail">
-<div class="signal-track">
-<span>
-      LIVE CONTROL PLANE
-     </span>
-<i>
-</i>
-<span>
-      EVAL-DRIVEN ROUTING
-     </span>
-<i>
-</i>
-<span>
-      POLICY-AWARE EXECUTION
-     </span>
-<i>
-</i>
-<span>
-      TRACE EVERY BRANCH
-     </span>
-<i>
-</i>
-<span>
-      MODEL-AGNOSTIC
-     </span>
-</div>
-</div>
-<section class="section alt">
-<div class="stats">
-<div class="stat">
-<b>
-       42ms
-      </b>
-<span>
-       Median route overhead
-      </span>
-</div>
-<div class="stat">
-<b>
-       99.99%
-      </b>
-<span>
-       Control-plane uptime
-      </span>
-</div>
-<div class="stat">
-<b>
-       38%
-      </b>
-<span>
-       Median model-cost reduction
-      </span>
-</div>
-<div class="stat">
-<b>
-       18
-      </b>
-<span>
-       Model providers supported
-      </span>
-</div>
-</div>
-</section>
-<section class="section">
-<div class="eyebrow">
-     One control plane
-    </div>
-<h2 class="section-title">
-     Build systems that can change their minds.
-    </h2>
-<div class="cards-3" style="margin-top:36px">
-<a class="feature-card feature-link" href="product.html">
-<div class="num">
-       01 / ROUTE
-      </div>
-<h3>
-       Adaptive routing
-      </h3>
-<p>
-       Choose models by quality, cost, latency, policy, region, and live evaluation signals.
-      </p>
-</a>
-<a class="feature-card feature-link" href="product.html">
-<div class="num">
-       02 / TRACE
-      </div>
-<h3>
-       Agent observability
-      </h3>
-<p>
-       See prompts, tools, branches, retries, failures, and outcomes as one coherent trace.
-      </p>
-</a>
-<a class="feature-card feature-link" href="product.html">
-<div class="num">
-       03 / GOVERN
-      </div>
-<h3>
-       Policy everywhere
-      </h3>
-<p>
-       Attach guardrails to workflows, environments, teams, and individual execution paths.
-      </p>
-</a>
-</div>
-</section>
-<section class="section alt">
-<div class="control">
-<div>
-<div class="eyebrow">
-       Control plane
-      </div>
-<h2 class="section-title">
-       One place to see what your AI is actually doing.
-      </h2>
-<p class="lede">
-       Aurora turns distributed model calls and agent behavior into a system your team can understand, compare, and improve.
-      </p>
-<a class="btn secondary" href="product.html">
-       See the product →
-      </a>
-</div>
-<figure class="media">
-<img alt="Aurora product control plane" src="assets/control-plane.svg"/>
-</figure>
-</div>
-</section>
-<section class="section">
-<div class="split stack-mobile" style="gap:50px">
-<div>
-<div class="eyebrow">
-       Built for the messy middle
-      </div>
-<p class="quote">
-       “The point isn’t to pick one model forever. It’s to build a system that keeps making the right choice.”
-      </p>
-</div>
-<div class="mini-table">
-<div class="mini-row">
-<b>
-        Production agents
-       </b>
-<span>
-        Trace every branch
-       </span>
-</div>
-<div class="mini-row">
-<b>
-        Customer support
-       </b>
-<span>
-        Route by intent + policy
-       </span>
-</div>
-<div class="mini-row">
-<b>
-        Document workflows
-       </b>
-<span>
-        Evaluate quality automatically
-       </span>
-</div>
-<div class="mini-row">
-<b>
-        Developer tools
-       </b>
-<span>
-        Control latency + spend
-       </span>
-</div>
-</div>
-</div>
-</section>
-<section class="section runtime-section">
-<div class="eyebrow">
-     Runtime / signal to action
-    </div>
-<div class="runtime-layout">
-<div>
-<h2 class="section-title">
-       A feedback loop, not a black box.
-      </h2>
-<div class="flow-steps">
-<article>
-<span>
-         01
-        </span>
-<h3>
-         Observe
-        </h3>
-<p>
-         Capture the full execution path, evaluation signals, cost, latency, and user outcome.
-        </p>
-</article>
-<article>
-<span>
-         02
-        </span>
-<h3>
-         Decide
-        </h3>
-<p>
-         Apply routing logic, policy, live quality thresholds, and environmental context.
-        </p>
-</article>
-<article>
-<span>
-         03
-        </span>
-<h3>
-         Improve
-        </h3>
-<p>
-         Promote better behavior without rebuilding every workflow from scratch.
-        </p>
-</article>
-</div>
-</div>
-<aside class="runtime-card">
-<div class="runtime-head">
-<b>
-        TRACE / 8F2A
-       </b>
-<span>
-<i>
-</i>
-        LIVE
-       </span>
-</div>
-<div class="runtime-row">
-<span>
-        Intent
-       </span>
-<b>
-        support.refund
-       </b>
-</div>
-<div class="runtime-row">
-<span>
-        Route
-       </span>
-<b>
-        Model B / EU
-       </b>
-</div>
-<div class="runtime-row">
-<span>
-        Policy
-       </span>
-<b>
-        passed · 14 rules
-       </b>
-</div>
-<div class="runtime-row">
-<span>
-        Eval
-       </span>
-<b>
-        0.94 quality
-       </b>
-</div>
-<div class="runtime-row">
-<span>
-        Latency
-       </span>
-<b>
-        683 ms
-       </b>
-</div>
-<div class="runtime-log">
-       route.selected → tool.authorized → answer.evaluated → trace.closed
-      </div>
-</aside>
-</div>
-</section>
-</main>
-<footer class="site-footer"><div><strong>Aurora Systems</strong><p>Adaptive intelligence infrastructure</p></div><div class="footer-links"><a href="index.html">Platform</a><a href="product.html">Product</a><a href="company.html">Company</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="privacy.html#cookie-settings">Cookie settings</a></div><div class="footer-meta">Production AI infrastructure<br/>© 2026 Aurora Systems</div></footer>
-<script src="site.js">
-</script>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mobile-bar"><a class="mobile-brand" href="index.html">A/ AURORA SYSTEMS</a><button class="drawer-button" type="button" aria-controls="control-rail" aria-expanded="false" data-drawer-button>Index +</button></div>
+  <aside class="control-rail" id="control-rail" aria-label="Primary">
+    <a class="rail-brand" href="index.html" aria-label="Aurora Systems platform"><span class="rail-mark">A/</span></a>
+    <nav class="rail-nav">
+      <a class="rail-link" href="index.html" aria-current="page"><span class="rail-code">01</span><span class="rail-label">Platform</span></a>
+      <a class="rail-link" href="observe.html"><span class="rail-code">02</span><span class="rail-label">Observe</span></a>
+      <a class="rail-link" href="govern.html"><span class="rail-code">03</span><span class="rail-label">Govern</span></a>
+      <a class="rail-link" href="security.html"><span class="rail-code">04</span><span class="rail-label">Security</span></a>
+      <a class="rail-link" href="developers.html"><span class="rail-code">05</span><span class="rail-label">Developers</span></a>
+      <a class="rail-link" href="company.html"><span class="rail-code">06</span><span class="rail-label">Company</span></a>
+      <a class="rail-link" href="contact.html"><span class="rail-code">07</span><span class="rail-label">Contact</span></a>
+    </nav>
+    <div class="rail-foot">CONTROL<br>07 / 07</div>
+  </aside>
+
+  <div class="page-shell">
+    <div class="system-bar"><span class="system-state"><i></i>Control surface / ready</span><span>Concept environment / no live traffic</span></div>
+    <main id="main">
+      <section class="workbench" aria-labelledby="platform-title">
+        <div class="workbench-main">
+          <div class="workbench-head"><span id="platform-title">Platform / orchestration map</span><span>Environment: concept</span></div>
+          <div class="orchestration-canvas">
+            <svg viewBox="0 0 900 560" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">Aurora orchestration map</title>
+              <desc id="map-desc">A sample workflow moves from intake through policy, routing, tools, evaluation, and output.</desc>
+              <path class="diagram-line live" d="M155 278H270M410 278H490M630 278H748"/>
+              <path class="diagram-line" d="M340 230V140H490M560 230V140H690V230M560 326V418H690V326"/>
+              <circle class="diagram-dot" cx="210" cy="278" r="4"/><circle class="diagram-dot" cx="450" cy="278" r="4"/><circle class="diagram-dot" cx="690" cy="278" r="4"/>
+              <g class="diagram-node primary"><rect x="25" y="230" width="130" height="96"/><text x="45" y="268">INTAKE</text><text class="node-sub" x="45" y="291">request + context</text></g>
+              <g class="diagram-node policy"><rect x="270" y="230" width="140" height="96"/><text x="290" y="268">POLICY</text><text class="node-sub" x="290" y="291">rules + boundary</text></g>
+              <g class="diagram-node primary"><rect x="490" y="230" width="140" height="96"/><text x="510" y="268">ROUTER</text><text class="node-sub" x="510" y="291">signal resolution</text></g>
+              <g class="diagram-node"><rect x="490" y="92" width="140" height="72"/><text x="510" y="124">MODEL POOL</text><text class="node-sub" x="510" y="145">candidate targets</text></g>
+              <g class="diagram-node"><rect x="690" y="230" width="130" height="96"/><text x="710" y="268">TOOLS</text><text class="node-sub" x="710" y="291">authorized actions</text></g>
+              <g class="diagram-node policy"><rect x="490" y="394" width="140" height="72"/><text x="510" y="426">EVALUATE</text><text class="node-sub" x="510" y="447">checks + outcome</text></g>
+              <g class="diagram-node primary"><rect x="748" y="394" width="130" height="72"/><text x="768" y="426">OUTPUT</text><text class="node-sub" x="768" y="447">response + trace</text></g>
+              <path class="diagram-line live" d="M630 430H748"/>
+            </svg>
+            <div class="canvas-legend"><span><i></i>Execution</span><span><i></i>Policy</span></div>
+          </div>
+        </div>
+        <aside class="workbench-side" aria-label="Sample execution">
+          <div class="panel-head"><span>Execution / preview</span><span class="sample-badge">Sample data</span></div>
+          <div class="run-summary"><p class="panel-label">Workflow</p><h2>support.refund</h2><p>Illustrative trace showing how routing, policy, tools, and evaluation meet in one execution record.</p></div>
+          <dl class="signal-list">
+            <div class="signal-row"><dt>State</dt><dd class="ok">completed</dd></div>
+            <div class="signal-row"><dt>Route</dt><dd>candidate_b</dd></div>
+            <div class="signal-row"><dt>Policy</dt><dd class="policy">boundary_passed</dd></div>
+            <div class="signal-row"><dt>Tool</dt><dd>refund.lookup</dd></div>
+            <div class="signal-row"><dt>Eval</dt><dd>quality_check</dd></div>
+          </dl>
+          <div class="event-log"><b>00</b> request.accepted<br><b>01</b> policy.resolved<br><b>02</b> route.selected<br><b>03</b> tool.authorized<br><b>04</b> output.evaluated</div>
+        </aside>
+      </section>
+
+      <header class="page-header">
+        <p class="page-kicker">Aurora Systems / operational AI infrastructure</p>
+        <h1>Operate the system, <em>not the model.</em></h1>
+        <div class="page-intro"><a class="command-link" href="contact.html">Request concept access →</a><p>Aurora is a portfolio product concept for routing, observing, governing, and securing production AI workflows from one technical control surface.</p></div>
+      </header>
+
+      <section class="section">
+        <p class="page-kicker">Control domains</p>
+        <h2 class="section-heading">One operating picture across the runtime.</h2>
+        <div class="capability-ledger">
+          <a class="capability-link" href="observe.html"><span class="index">02</span><h3>Observe</h3><p>Reconstruct prompts, tools, retries, branches, evaluations, and outcomes as one trace.</p><span class="arrow">→</span></a>
+          <a class="capability-link" href="govern.html"><span class="index">03</span><h3>Govern</h3><p>Resolve provider, region, budget, quality, and policy decisions at execution time.</p><span class="arrow">→</span></a>
+          <a class="capability-link" href="security.html"><span class="index">04</span><h3>Security</h3><p>Make identity, data boundaries, approvals, and audit evidence explicit in the path.</p><span class="arrow">→</span></a>
+          <a class="capability-link" href="developers.html"><span class="index">05</span><h3>Developers</h3><p>Instrument one route first, keep the application boundary stable, and expand deliberately.</p><span class="arrow">→</span></a>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="page-kicker">Runtime loop</p>
+        <h2 class="section-heading">Signal becomes a reviewable decision.</h2>
+        <div class="three-column">
+          <article class="system-step"><span>01 / OBSERVE</span><h3>Capture context.</h3><p>Keep execution structure, inputs, branches, tools, evaluations, and outcomes together.</p></article>
+          <article class="system-step"><span>02 / DECIDE</span><h3>Resolve constraints.</h3><p>Combine product intent with environment, policy, region, quality, and budget signals.</p></article>
+          <article class="system-step"><span>03 / ENFORCE</span><h3>Close the loop.</h3><p>Apply the decision, retain evidence, and make the result available for the next improvement.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Aurora Systems / product concept</span><div class="footer-links"><a href="company.html">Company</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><span class="footer-note">No live service, customer traffic, or production claims are represented on this portfolio site.</span></footer>
+  </div>
+  <script src="site.js?v=20260820"></script>
 </body>
 </html>

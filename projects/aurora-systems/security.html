@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Aurora Systems security concept for explicit AI data and action boundaries.">
+  <title>Security — Aurora Systems</title>
+  <link rel="stylesheet" href="styles.css?v=20260820"><link rel="stylesheet" href="refined.css?v=20260820">
+</head>
+<body class="aurora-systems">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mobile-bar"><a class="mobile-brand" href="index.html">A/ AURORA SYSTEMS</a><button class="drawer-button" type="button" aria-controls="control-rail" aria-expanded="false" data-drawer-button>Index +</button></div>
+  <aside class="control-rail" id="control-rail" aria-label="Primary">
+    <a class="rail-brand" href="index.html" aria-label="Aurora Systems platform"><span class="rail-mark">A/</span></a>
+    <nav class="rail-nav">
+      <a class="rail-link" href="index.html"><span class="rail-code">01</span><span class="rail-label">Platform</span></a>
+      <a class="rail-link" href="observe.html"><span class="rail-code">02</span><span class="rail-label">Observe</span></a>
+      <a class="rail-link" href="govern.html"><span class="rail-code">03</span><span class="rail-label">Govern</span></a>
+      <a class="rail-link" href="security.html" aria-current="page"><span class="rail-code">04</span><span class="rail-label">Security</span></a>
+      <a class="rail-link" href="developers.html"><span class="rail-code">05</span><span class="rail-label">Developers</span></a>
+      <a class="rail-link" href="company.html"><span class="rail-code">06</span><span class="rail-label">Company</span></a>
+      <a class="rail-link" href="contact.html"><span class="rail-code">07</span><span class="rail-label">Contact</span></a>
+    </nav><div class="rail-foot">CONTROL<br>07 / 07</div>
+  </aside>
+  <div class="page-shell">
+    <div class="system-bar"><span class="system-state"><i></i>Security / boundary map</span><span>Architecture preview / concept</span></div>
+    <main id="main">
+      <header class="page-header">
+        <p class="page-kicker">Security / explicit boundaries</p>
+        <h1>Control what the system <em>may cross.</em></h1>
+        <div class="page-intro"><a class="command-link" href="#boundary-map">Inspect boundary model ↓</a><p>Make identity, data scope, region, provider, and tool authorization visible in the execution path—without implying certifications or deployment guarantees this concept does not have.</p></div>
+      </header>
+      <section class="section" id="boundary-map">
+        <p class="page-kicker">Data and action path</p>
+        <h2 class="section-heading">The boundary should be part of the architecture.</h2>
+        <div class="boundary-map">
+          <div class="boundary-diagram">
+            <svg viewBox="0 0 600 390" role="img" aria-labelledby="boundary-title boundary-desc">
+              <title id="boundary-title">Sample security boundary model</title><desc id="boundary-desc">Application identity enters a policy boundary before reaching providers and approved tools.</desc>
+              <rect class="boundary-zone secure" x="25" y="55" width="160" height="275"/><text class="boundary-text" x="48" y="92">APPLICATION</text><text class="boundary-sub" x="48" y="114">identity + context</text>
+              <rect class="boundary-zone policy" x="220" y="30" width="165" height="325"/><text class="boundary-text" x="242" y="68">POLICY BOUNDARY</text><text class="boundary-sub" x="242" y="90">scope + region + action</text>
+              <rect class="boundary-zone" x="420" y="55" width="150" height="120"/><text class="boundary-text" x="442" y="92">PROVIDERS</text><text class="boundary-sub" x="442" y="114">approved targets</text>
+              <rect class="boundary-zone" x="420" y="210" width="150" height="120"/><text class="boundary-text" x="442" y="247">TOOLS</text><text class="boundary-sub" x="442" y="269">approved actions</text>
+              <path class="diagram-line live" d="M185 192H220M385 130H420M385 270H420"/><circle class="diagram-dot" cx="203" cy="192" r="4"/><circle class="diagram-dot" cx="402" cy="130" r="4"/><circle class="diagram-dot" cx="402" cy="270" r="4"/>
+            </svg>
+          </div>
+          <div class="boundary-copy">
+            <p class="panel-label">Control model</p>
+            <div class="control-list">
+              <article class="control-row"><span>01</span><div><h3>Identity before execution</h3><p>Bind the request to an application, environment, user context, and allowed capability set.</p></div></article>
+              <article class="control-row"><span>02</span><div><h3>Data before destination</h3><p>Resolve region and provider boundaries before any model or tool receives scoped context.</p></div></article>
+              <article class="control-row"><span>03</span><div><h3>Authorization before action</h3><p>Keep tool permissions narrower than the workflow and attach the decision to the trace.</p></div></article>
+              <article class="control-row"><span>04</span><div><h3>Evidence after completion</h3><p>Retain policy version, resolved boundary, and action outcome for later review.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">Security review questions</p>
+        <div class="three-column">
+          <article class="system-step"><span>01 / DATA</span><h3>Where can context go?</h3><p>Define the provider, region, retention, and redaction conditions that apply to each execution class.</p></article>
+          <article class="system-step"><span>02 / ACTION</span><h3>What may a tool do?</h3><p>Separate read, write, approval, and high-risk actions; deny by default when required context is absent.</p></article>
+          <article class="system-step"><span>03 / CHANGE</span><h3>Who may alter policy?</h3><p>Review versions, environment promotion, emergency fallback, and rollback as operational controls.</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">No badge theater</p><h2 class="section-heading">Security claims require evidence.</h2><p class="section-deck">This portfolio concept deliberately does not claim certifications, audit status, encryption guarantees, data residency, or deployment modes. A real implementation would publish current evidence and precise boundaries here.</p>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Aurora Systems / product concept</span><div class="footer-links"><a href="index.html">Platform</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><span class="footer-note">No compliance, certification, or production security claims are made by this concept site.</span></footer>
+  </div>
+  <script src="site.js?v=20260820"></script>
+</body>
+</html>

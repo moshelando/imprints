@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Aurora Systems developer concept for instrumenting AI routes and traces.">
+  <title>Developers — Aurora Systems</title>
+  <link rel="stylesheet" href="styles.css?v=20260820"><link rel="stylesheet" href="refined.css?v=20260820">
+</head>
+<body class="aurora-systems">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mobile-bar"><a class="mobile-brand" href="index.html">A/ AURORA SYSTEMS</a><button class="drawer-button" type="button" aria-controls="control-rail" aria-expanded="false" data-drawer-button>Index +</button></div>
+  <aside class="control-rail" id="control-rail" aria-label="Primary">
+    <a class="rail-brand" href="index.html" aria-label="Aurora Systems platform"><span class="rail-mark">A/</span></a>
+    <nav class="rail-nav">
+      <a class="rail-link" href="index.html"><span class="rail-code">01</span><span class="rail-label">Platform</span></a>
+      <a class="rail-link" href="observe.html"><span class="rail-code">02</span><span class="rail-label">Observe</span></a>
+      <a class="rail-link" href="govern.html"><span class="rail-code">03</span><span class="rail-label">Govern</span></a>
+      <a class="rail-link" href="security.html"><span class="rail-code">04</span><span class="rail-label">Security</span></a>
+      <a class="rail-link" href="developers.html" aria-current="page"><span class="rail-code">05</span><span class="rail-label">Developers</span></a>
+      <a class="rail-link" href="company.html"><span class="rail-code">06</span><span class="rail-label">Company</span></a>
+      <a class="rail-link" href="contact.html"><span class="rail-code">07</span><span class="rail-label">Contact</span></a>
+    </nav><div class="rail-foot">CONTROL<br>07 / 07</div>
+  </aside>
+  <div class="page-shell">
+    <div class="system-bar"><span class="system-state"><i></i>Developers / integration pattern</span><span>Illustrative interface / not an SDK</span></div>
+    <main id="main">
+      <header class="page-header">
+        <p class="page-kicker">Developers / stable application boundary</p>
+        <h1>Instrument one route. <em>Expand deliberately.</em></h1>
+        <div class="page-intro"><a class="command-link" href="#concept-interface">View concept interface ↓</a><p>Keep application intent stable while routing, policy, trace context, and evaluation evolve behind an explicit integration boundary.</p></div>
+      </header>
+      <section class="section" id="concept-interface">
+        <p class="page-kicker">Concept interface / TypeScript-shaped pseudocode</p>
+        <h2 class="section-heading">The application sends intent, not provider wiring.</h2>
+        <div class="code-block">
+          <div class="code-head"><span>route.ts / illustrative only</span><button class="copy-button" type="button" data-copy-code>Copy</button></div>
+          <pre data-code-text><code><span class="token-key">const</span> result = <span class="token-key">await</span> aurora.run({
+  route: <span class="token-string">"support.refund"</span>,
+  input: request,
+  context: {
+    environment: <span class="token-string">"production"</span>,
+    region: user.region,
+    toolScope: [<span class="token-string">"refund.lookup"</span>]
+  },
+  evaluate: [<span class="token-string">"policy"</span>, <span class="token-string">"quality"</span>]
+});
+
+return result.output;</code></pre>
+        </div>
+        <p class="section-deck">This is interface design, not a released package or working API. It demonstrates the intended separation between application intent and runtime resolution.</p>
+      </section>
+      <section class="section">
+        <p class="page-kicker">Integration sequence</p>
+        <div class="three-column">
+          <article class="system-step"><span>01 / WRAP</span><h3>Choose one route.</h3><p>Start with a workflow whose failures, policy needs, or provider dependencies are already visible to the team.</p></article>
+          <article class="system-step"><span>02 / TRACE</span><h3>Preserve context.</h3><p>Attach application metadata and outcome signals before changing routing behavior or adding automated evaluation.</p></article>
+          <article class="system-step"><span>03 / CONTROL</span><h3>Promote gradually.</h3><p>Introduce policy and alternate targets behind explicit environment changes, review, and rollback.</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">Concept event envelope</p>
+        <h2 class="section-heading">A trace contract should survive provider change.</h2>
+        <div class="code-block">
+          <div class="code-head"><span>event.json / illustrative only</span><button class="copy-button" type="button" data-copy-code>Copy</button></div>
+          <pre data-code-text><code>{
+  <span class="token-string">"trace_id"</span>: <span class="token-string">"sample_8f2a"</span>,
+  <span class="token-string">"span"</span>: <span class="token-string">"route.selected"</span>,
+  <span class="token-string">"parent"</span>: <span class="token-string">"policy.resolved"</span>,
+  <span class="token-string">"attributes"</span>: {
+    <span class="token-string">"route"</span>: <span class="token-string">"support.refund"</span>,
+    <span class="token-string">"environment"</span>: <span class="token-string">"production"</span>,
+    <span class="token-string">"decision_version"</span>: <span class="token-string">"concept_v1"</span>
+  }
+}</code></pre>
+        </div>
+      </section>
+      <section class="section">
+        <p class="page-kicker">Continue the system view</p>
+        <div class="capability-ledger">
+          <a class="capability-link" href="observe.html"><span class="index">02</span><h3>Trace model</h3><p>See how the execution envelope becomes a branch-aware debugging and evaluation record.</p><span class="arrow">→</span></a>
+          <a class="capability-link" href="govern.html"><span class="index">03</span><h3>Decision model</h3><p>See how context and constraints resolve into a reviewable runtime action.</p><span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Aurora Systems / product concept</span><div class="footer-links"><a href="index.html">Platform</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><span class="footer-note">Code shown here is pseudocode for a portfolio interface concept, not installation or API documentation.</span></footer>
+  </div>
+  <script src="site.js?v=20260820"></script>
+</body>
+</html>
