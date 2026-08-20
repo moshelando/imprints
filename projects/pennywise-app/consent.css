@@ -1,1 +1,26 @@
-.penny-consent{position:fixed;left:18px;right:18px;bottom:18px;z-index:220;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:18px 20px;border:3px solid #1c2250;border-radius:18px;background:#f9f8ef;color:#1c2250;box-shadow:8px 8px 0 #1c2250}.penny-consent strong{display:block;font-size:16px;margin-bottom:4px}.penny-consent span{font-size:12px;line-height:1.4}.penny-actions{display:flex;gap:8px}.penny-consent button,.privacy-link{cursor:pointer}.penny-consent button{border:2px solid #1c2250;border-radius:12px;background:#fff;padding:10px 13px;font-weight:900;color:#1c2250}.penny-consent .yes{background:#1c2250;color:#fff}.privacy-link{border:0;background:none;padding:0;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px}@media(max-width:720px){.penny-consent{grid-template-columns:1fr}.penny-actions{display:grid;grid-template-columns:1fr 1fr}}
+.penny-consent{
+  position:fixed;
+  left:18px;
+  right:18px;
+  bottom:18px;
+  z-index:220;
+  padding:17px 19px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:28px;
+  align-items:center;
+  color:#20233f;
+  background:rgba(255,255,255,.97);
+  border:1px solid #c9c3ed;
+  border-radius:20px;
+  box-shadow:0 20px 55px rgba(32,35,63,.18);
+}
+.penny-consent strong{display:block;margin-bottom:4px;font-size:15px}
+.penny-consent span{display:block;max-width:680px;color:#666b85;font-size:12px;line-height:1.45}
+.penny-actions{display:flex;align-items:center;gap:8px}
+.penny-consent button{padding:10px 13px;color:#352ac8;background:#fff;border:1px solid #c9c3ed;border-radius:999px;font-size:11px;font-weight:850}
+.penny-consent button.yes{color:#fff;background:#4f43e8;border-color:#4f43e8}
+.privacy-link{padding:8px;color:#555a76;font-size:11px;font-weight:750;text-underline-offset:3px}
+.penny-consent :focus-visible{outline:3px solid #4f43e8;outline-offset:3px}
+@media(max-width:760px){.penny-consent{grid-template-columns:1fr;gap:14px}.penny-actions{flex-wrap:wrap}}
+@media(max-width:460px){.penny-consent{left:10px;right:10px;bottom:10px}.penny-actions{display:grid;grid-template-columns:1fr 1fr}.privacy-link{grid-column:1/-1;text-align:center}}
