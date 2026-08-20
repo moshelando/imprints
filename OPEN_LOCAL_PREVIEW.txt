@@ -1,0 +1,13 @@
+LANDO WORKS — LOCAL PREVIEW
+
+1. Extract the ZIP.
+2. Open the extracted folder.
+3. Double-click index.html.
+
+No installation, build command, or local server is required.
+
+The five website demonstrations are included under projects/ and open from
+the main Lando Works page.
+
+Forms in the demonstrations are interface previews. They do not transmit or
+store information.

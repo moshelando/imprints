@@ -43,20 +43,10 @@
       if (!form.reportValidity()) return;
       const status = form.querySelector('[data-form-status]');
       if (!status) return;
-      status.textContent = form.dataset.success || 'Demo complete. No request was sent or stored.';
+      status.textContent = form.dataset.success || 'Request received.';
       status.hidden = false;
       status.setAttribute('tabindex', '-1');
       status.focus();
     });
-  });
-
-  const clearButton = document.querySelector('[data-clear-preferences]');
-  clearButton?.addEventListener('click', () => {
-    try { localStorage.removeItem('aurora-consent-v1'); } catch (_) {}
-    const status = document.querySelector('[data-preference-status]');
-    if (status) {
-      status.textContent = 'Legacy Aurora preference cleared from this browser.';
-      status.hidden = false;
-    }
   });
 })();

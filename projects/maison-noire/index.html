@@ -10,24 +10,13 @@
 </head>
 <body class="maison-noire">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="corner-nav">
-    <a class="corner-brand" href="index.html" aria-current="page">Maison Noire</a>
-    <a class="corner-collection" href="collection.html">Collection</a>
-    <span class="corner-edition" aria-hidden="true">07 / Paris</span>
-    <button class="corner-menu" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-button>Menu +</button>
-    <nav class="menu-overlay" id="site-menu" aria-label="Primary" hidden data-menu>
-      <div class="menu-visual"><img src="assets/hero-look.svg" alt=""></div>
-      <div class="menu-panel">
-        <p class="menu-label">Index / Edition 07</p>
-        <div class="menu-links">
-          <a href="index.html" aria-current="page"><small>01</small>Campaign</a>
-          <a href="collection.html"><small>02</small>Collection</a>
-          <a href="look.html?look=01"><small>03</small>Look 01</a>
-          <a href="atelier.html"><small>04</small>Atelier</a>
-          <a href="contact.html"><small>05</small>Client services</a>
-        </div>
-        <p class="menu-note">After dark — a digital campaign book for Edition 07.</p>
-      </div>
+  <header class="maison-header">
+    <a class="maison-brand" href="index.html" aria-current="page">Maison Noire <span>Edition 07</span></a>
+    <nav class="maison-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Campaign</a>
+      <a href="collection.html">Collection</a>
+      <a href="atelier.html">Atelier</a>
+      <a href="contact.html">Client services</a>
     </nav>
   </header>
 
@@ -38,35 +27,33 @@
         <p class="eyebrow">Edition 07 / After dark</p>
         <h1>Cut for shadow.</h1>
         <div class="campaign-deck">
-          <p>Evening forms reduced to line, volume, and movement. A study in black, made to be seen slowly.</p>
+          <p>Six looks / Wool, silk, satin</p>
           <a class="text-link" href="collection.html">Enter the collection ↓</a>
         </div>
       </div>
     </section>
 
-    <a class="campaign-look" href="look.html?look=01" data-reveal>
-      <img src="assets/look-01.svg" alt="Abstract silhouette for Look 01, the long jacket" loading="lazy">
-      <div class="look-caption">
-        <h2>Long jacket.</h2>
-        <p>Look 01 / Wool barathea / Black</p>
+    <section class="edition-overview" aria-labelledby="edition-title">
+      <div class="edition-heading" data-reveal>
+        <div><p class="eyebrow">Edition 07</p><h2 id="edition-title">Selected looks.</h2></div>
+        <p>View materials, construction, and availability.</p>
       </div>
-    </a>
-
-    <a class="campaign-look" href="look.html?look=02" data-reveal>
-      <img src="assets/hero-look.svg" alt="Abstract silhouette for Look 02, the column dress" loading="lazy">
-      <div class="look-caption">
-        <h2>Column dress.</h2>
-        <p>Look 02 / Washed silk / Black</p>
+      <div class="look-grid">
+        <a class="look-tile" href="look.html?look=01" data-reveal>
+          <div><img src="assets/look-01.svg" alt="Abstract silhouette for Look 01, the long jacket" loading="lazy"></div>
+          <span>01 / Wool barathea</span><h3>Long jacket.</h3>
+        </a>
+        <a class="look-tile" href="look.html?look=02" data-reveal>
+          <div><img src="assets/hero-look.svg" alt="Abstract silhouette for Look 02, the column dress" loading="lazy"></div>
+          <span>02 / Washed silk</span><h3>Column dress.</h3>
+        </a>
+        <a class="look-tile" href="look.html?look=03" data-reveal>
+          <div><img src="assets/atelier.svg" alt="Abstract silhouette for Look 03, the soft trouser" loading="lazy"></div>
+          <span>03 / Wool twill</span><h3>Soft trouser.</h3>
+        </a>
       </div>
-    </a>
-
-    <a class="campaign-look" href="look.html?look=03" data-reveal>
-      <img src="assets/atelier.svg" alt="Abstract silhouette for Look 03, the soft trouser" loading="lazy">
-      <div class="look-caption">
-        <h2>Soft trouser.</h2>
-        <p>Look 03 / Wool twill / Black</p>
-      </div>
-    </a>
+      <a class="text-link edition-link" href="collection.html">View all six looks →</a>
+    </section>
 
     <section class="editorial-section" data-reveal>
       <p class="eyebrow">The atelier</p>

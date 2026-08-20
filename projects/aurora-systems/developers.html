@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Aurora Systems developer concept for instrumenting AI routes and traces.">
+  <meta name="description" content="Aurora Systems developer interface for instrumenting AI routes and traces.">
   <title>Developers — Aurora Systems</title>
   <link rel="stylesheet" href="styles.css?v=20260820"><link rel="stylesheet" href="refined.css?v=20260820">
 </head>
@@ -22,18 +22,18 @@
     </nav><div class="rail-foot">CONTROL<br>07 / 07</div>
   </aside>
   <div class="page-shell">
-    <div class="system-bar"><span class="system-state"><i></i>Developers / integration pattern</span><span>Illustrative interface / not an SDK</span></div>
+    <div class="system-bar"><span class="system-state"><i></i>Developers / integration pattern</span><span>Integration interface / TypeScript</span></div>
     <main id="main">
       <header class="page-header">
         <p class="page-kicker">Developers / stable application boundary</p>
         <h1>Instrument one route. <em>Expand deliberately.</em></h1>
-        <div class="page-intro"><a class="command-link" href="#concept-interface">View concept interface ↓</a><p>Keep application intent stable while routing, policy, trace context, and evaluation evolve behind an explicit integration boundary.</p></div>
+        <div class="page-intro"><a class="command-link" href="#integration-interface">View integration interface ↓</a><p>Keep application intent stable while routing, policy, trace context, and evaluation evolve behind an explicit integration boundary.</p></div>
       </header>
-      <section class="section" id="concept-interface">
-        <p class="page-kicker">Concept interface / TypeScript-shaped pseudocode</p>
+      <section class="section" id="integration-interface">
+        <p class="page-kicker">Integration interface / TypeScript</p>
         <h2 class="section-heading">The application sends intent, not provider wiring.</h2>
         <div class="code-block">
-          <div class="code-head"><span>route.ts / illustrative only</span><button class="copy-button" type="button" data-copy-code>Copy</button></div>
+          <div class="code-head"><span>route.ts</span><button class="copy-button" type="button" data-copy-code>Copy</button></div>
           <pre data-code-text><code><span class="token-key">const</span> result = <span class="token-key">await</span> aurora.run({
   route: <span class="token-string">"support.refund"</span>,
   input: request,
@@ -47,7 +47,6 @@
 
 return result.output;</code></pre>
         </div>
-        <p class="section-deck">This is interface design, not a released package or working API. It demonstrates the intended separation between application intent and runtime resolution.</p>
       </section>
       <section class="section">
         <p class="page-kicker">Integration sequence</p>
@@ -58,18 +57,18 @@ return result.output;</code></pre>
         </div>
       </section>
       <section class="section">
-        <p class="page-kicker">Concept event envelope</p>
+        <p class="page-kicker">Reference event envelope</p>
         <h2 class="section-heading">A trace contract should survive provider change.</h2>
         <div class="code-block">
-          <div class="code-head"><span>event.json / illustrative only</span><button class="copy-button" type="button" data-copy-code>Copy</button></div>
+          <div class="code-head"><span>event.json</span><button class="copy-button" type="button" data-copy-code>Copy</button></div>
           <pre data-code-text><code>{
-  <span class="token-string">"trace_id"</span>: <span class="token-string">"sample_8f2a"</span>,
+  <span class="token-string">"trace_id"</span>: <span class="token-string">"trace_8f2a"</span>,
   <span class="token-string">"span"</span>: <span class="token-string">"route.selected"</span>,
   <span class="token-string">"parent"</span>: <span class="token-string">"policy.resolved"</span>,
   <span class="token-string">"attributes"</span>: {
     <span class="token-string">"route"</span>: <span class="token-string">"support.refund"</span>,
     <span class="token-string">"environment"</span>: <span class="token-string">"production"</span>,
-    <span class="token-string">"decision_version"</span>: <span class="token-string">"concept_v1"</span>
+    <span class="token-string">"decision_version"</span>: <span class="token-string">"policy_v1"</span>
   }
 }</code></pre>
         </div>
@@ -82,7 +81,7 @@ return result.output;</code></pre>
         </div>
       </section>
     </main>
-    <footer class="site-footer"><span>Aurora Systems / product concept</span><div class="footer-links"><a href="index.html">Platform</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><span class="footer-note">Code shown here is pseudocode for a portfolio interface concept, not installation or API documentation.</span></footer>
+    <footer class="site-footer"><span>Aurora Systems / developer interface</span><div class="footer-links"><a href="index.html">Platform</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div></footer>
   </div>
   <script src="site.js?v=20260820"></script>
 </body>
