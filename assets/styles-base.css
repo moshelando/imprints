@@ -1032,9 +1032,12 @@ button { color: inherit; font: inherit; }
 .button-light { width: 100%; background: var(--acid); color: var(--ink); }
 .button-light:hover { background: var(--paper-bright); }
 .contact-actions > p { margin-top: 24px !important; color: #d5d9ff !important; font-size: 11px !important; line-height: 1.65 !important; }
-.contact-placeholder { display: grid; gap: 11px; padding: 20px 0; border-block: 1px solid rgba(255,255,255,.55); }
-.contact-placeholder span { font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.contact-placeholder b { color: var(--acid); font-size: 18px; letter-spacing: -.025em; }
+.contact-email { display: grid; gap: 11px; padding: 20px 0; border-block: 1px solid rgba(255,255,255,.55); }
+.contact-email span { font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.contact-email b { color: var(--acid); font-size: clamp(18px, 1.55vw, 24px); letter-spacing: -.025em; overflow-wrap: anywhere; }
+.contact-email em { width: max-content; margin-top: 3px; border-bottom: 1px solid currentColor; color: #d5d9ff; font-size: 9px; font-style: normal; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.contact-email:hover b { color: var(--paper-bright); }
+.contact-email:hover em { color: var(--acid); }
 
 .site-footer { padding: 42px 0 48px; border-top: 1px solid #30302b; background: var(--ink); color: var(--paper-bright); }
 .footer-grid { display: grid; grid-template-columns: .7fr 1.2fr .7fr .7fr; gap: 50px; align-items: start; }
