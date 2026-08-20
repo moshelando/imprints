@@ -9,7 +9,10 @@
   }
   const current=location.pathname.split('/').pop()||'index.html';
   document.querySelectorAll('.nav-links a').forEach(a=>{
-    if(a.getAttribute('href')===current)a.classList.add('active');
+    if(a.getAttribute('href')===current){
+      a.classList.add('active');
+      a.setAttribute('aria-current','page');
+    }
   });
   const form=document.querySelector('[data-contact-form]');
   if(form){
@@ -19,7 +22,7 @@
       const status=form.querySelector('[data-form-status]');
       if(status){
         status.hidden=false;
-        status.textContent='Thank you. Your project inquiry has been recorded for this portfolio demo.';
+        status.textContent='Your demo inquiry is ready. Nothing was sent or saved.';
         status.focus();
       }
     });
