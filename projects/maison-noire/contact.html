@@ -1,4 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Maison Noire client services for Edition 07 appointments, sizing, and care.">
+  <title>Client services — Maison Noire</title>
+  <link rel="stylesheet" href="styles.css?v=20260820">
+  <link rel="stylesheet" href="refined.css?v=20260820">
+</head>
+<body class="maison-noire">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="corner-nav">
+    <a class="corner-brand" href="index.html">Maison Noire</a>
+    <a class="corner-collection" href="collection.html">Collection</a>
+    <span class="corner-edition" aria-hidden="true">07 / Paris</span>
+    <button class="corner-menu" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-button>Menu +</button>
+    <nav class="menu-overlay" id="site-menu" aria-label="Primary" hidden data-menu>
+      <div class="menu-visual"><img src="assets/hero-look.svg" alt=""></div>
+      <div class="menu-panel">
+        <p class="menu-label">Index / Edition 07</p>
+        <div class="menu-links">
+          <a href="index.html"><small>01</small>Campaign</a>
+          <a href="collection.html"><small>02</small>Collection</a>
+          <a href="look.html?look=01"><small>03</small>Look 01</a>
+          <a href="atelier.html"><small>04</small>Atelier</a>
+          <a href="contact.html" aria-current="page"><small>05</small>Client services</a>
+        </div>
+        <p class="menu-note">Appointments, sizing, availability, and aftercare.</p>
+      </div>
+    </nav>
+  </header>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Edition 07 — After dark." name="description"/><title>Client services — Maison Noire</title><link href="styles.css" rel="stylesheet"/><link href="refined.css" rel="stylesheet"/>
-</head><body class="maison-noire"><header class="site-header"><a class="site-brand" href="index.html">Maison Noire</a><button aria-expanded="false" aria-label="Toggle menu" class="menu-button" data-menu-button="" type="button">Menu</button><nav class="desktop-nav"><a href="index.html">Campaign</a><a href="collection.html">Collection</a><a href="atelier.html">Atelier</a><a class="active" href="contact.html">Client services</a></nav><nav class="mobile-nav" data-mobile-nav=""><a href="index.html">Campaign</a><a href="collection.html">Collection</a><a href="atelier.html">Atelier</a><a class="active" href="contact.html">Client services</a></nav></header><main><section class="section"><div class="split" style="gap:55px"><div><div class="eyebrow">Client services</div><h1 class="section-title">Appointments, sizing, care.</h1><p>For private appointments, made-to-order questions, international sizing, or repairs, contact the atelier.</p><p><b>Paris showroom</b><br/>Saint-Germain<br/>Paris · By appointment</p></div><form class="service-panel" data-interactive-form="" data-success="Thank you. Your enquiry has been recorded."><div class="form-grid"><div class="field"><label for="maisonnoire-contact-1-1">Name</label><input id="maisonnoire-contact-1-1" name="name" required=""/></div><div class="field"><label for="maisonnoire-contact-1-2">Email</label><input id="maisonnoire-contact-1-2" name="email" required="" type="email"/></div><div class="field full"><label for="maisonnoire-contact-1-3">Enquiry</label><select id="maisonnoire-contact-1-3" name="enquiry"><option>Private appointment</option><option>Sizing</option><option>Order question</option><option>Care / repair</option></select></div><div class="field"><label for="maison-size">Usual size</label><input id="maison-size" name="size"/></div><div class="field"><label for="maison-location">City / country</label><input id="maison-location" name="location"/></div><div class="field full"><label for="maisonnoire-contact-1-4">Message</label><textarea id="maisonnoire-contact-1-4" name="message"></textarea></div><div class="field full"><button class="btn" type="submit">Send</button><div class="form-status" data-form-status="" hidden=""></div></div></div></form></div></section><section class="section client-care" id="care"><div class="eyebrow">Care + repair</div><h2 class="section-title">Garments are meant to stay in use.</h2><div class="care-grid"><div><b>Alterations</b><p>Fit adjustments for Maison Noire garments, including hems, sleeves, waist, and balance corrections.</p></div><div><b>Repair</b><p>Assessment of worn seams, linings, closures, and localized fabric damage before work is scheduled.</p></div><div><b>Care advice</b><p>Guidance on pressing, storage, cleaning, and seasonal maintenance for house fabrics.</p></div></div></section></main><footer class="site-footer"><div><strong>Maison Noire</strong><p>Edition 07 — After dark</p></div><div class="footer-links"><a href="collection.html">Collection</a><a href="atelier.html">Atelier</a><a href="contact.html">Client services</a><a href="contact.html#care">Care + repair</a></div><div class="footer-meta">Paris · Edition 07<br/>© 2026 Maison Noire</div></footer><script src="site.js"></script></body></html>
+  <main id="main">
+    <section class="services">
+      <div class="services-copy" data-reveal>
+        <div>
+          <p class="eyebrow">Client services</p>
+          <h1>Begin with a note.</h1>
+        </div>
+        <p>For private appointments, Edition 07 availability, international sizing, or garment care. Paris / by arrangement.</p>
+      </div>
+
+      <form class="service-form" data-interactive-form data-success="Demo received. No message was sent.">
+        <div class="form-grid">
+          <div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field full"><label for="contact-enquiry">Enquiry</label><select id="contact-enquiry" name="enquiry"><option>Private appointment</option><option>Edition 07 availability</option><option>Sizing</option><option>Care / repair</option></select></div>
+          <div class="field"><label for="contact-size">Usual size</label><input id="contact-size" name="size" autocomplete="off"></div>
+          <div class="field"><label for="contact-location">City / country</label><input id="contact-location" name="location" autocomplete="country-name"></div>
+          <div class="field full"><label for="contact-message">Message</label><textarea id="contact-message" name="message"></textarea></div>
+        </div>
+        <div class="submit-row">
+          <button class="submit-button" type="submit">Send enquiry →</button>
+          <p class="form-note" data-form-note>This portfolio form is a demonstration. It does not transmit personal information.</p>
+          <p class="form-status" data-form-status role="status" aria-live="polite" hidden></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="editorial-section" id="care" data-reveal>
+      <p class="eyebrow">Care + repair</p>
+      <h2 class="section-heading">Made to remain in use.</h2>
+      <div class="care-list">
+        <article><h2>Alterations.</h2><p>Fit adjustments for house garments, including hems, sleeves, waist, and balance corrections.</p></article>
+        <article><h2>Repair.</h2><p>Assessment of seams, linings, closures, and localized wear before work is scheduled.</p></article>
+        <article><h2>Care.</h2><p>Guidance on pressing, storage, cleaning, and seasonal maintenance for Edition 07 fabrics.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Maison Noire / Edition 07</span>
+    <div class="footer-links"><a href="index.html">Campaign</a><a href="collection.html">Collection</a><a href="atelier.html">Atelier</a></div>
+    <span>Paris / 2026</span>
+  </footer>
+  <script src="site.js?v=20260820"></script>
+</body>
+</html>
