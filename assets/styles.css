@@ -77,9 +77,9 @@ img { max-width: 100%; }
 .work-northline .project-visual { background: #c8c2b4; }
 .work-northline .project-primary { width: 72%; height: 75%; }
 .work-northline .project-secondary { width: 52%; height: 60%; }
-.work-pennywise .project-visual { background: #d9d5ff; }
-.work-pennywise .project-primary { left: auto; right: 6%; }
-.work-pennywise .project-secondary { right: auto; left: 5%; }
+.work-milemarker .project-visual { background: #d7b61d; }
+.work-milemarker .project-primary { left: auto; right: 6%; }
+.work-milemarker .project-secondary { right: auto; left: 5%; }
 .work-card:hover .project-primary { transform: translateY(-5px); filter: saturate(1.04); }
 .work-card:hover .project-secondary { transform: translateY(-8px); filter: saturate(1.04); }
 .project-meta { display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: baseline; padding: 16px 0 0; }
