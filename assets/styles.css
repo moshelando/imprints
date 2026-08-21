@@ -49,9 +49,7 @@ img { max-width: 100%; }
 
 .hero { min-height: 760px; background: var(--blue); color: var(--white); }
 .hero-inner { min-height: 760px; display: flex; flex-direction: column; padding-top: 123px; padding-bottom: 58px; }
-.hero h1 { margin: 0; font-weight: 700; letter-spacing: -.09em; line-height: .73; }
-.hero h1 span { display: block; font-size: clamp(132px, 18vw, 260px); }
-.hero h1 em { display: block; margin: .08em 0 0 -.01em; font-family: Baskerville, "Iowan Old Style", "Times New Roman", serif; font-size: clamp(120px, 16.6vw, 238px); font-weight: 400; letter-spacing: -.07em; line-height: .82; }
+.hero h1 { max-width: 11ch; margin: 0; font-size: clamp(78px, 9.4vw, 142px); font-weight: 700; letter-spacing: -.08em; line-height: .84; text-wrap: balance; }
 .hero-bottom { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; }
 .hero-bottom p { margin: 0; letter-spacing: -.035em; }
 .hero-lead { max-width: 31ch; font-size: 19px; line-height: 1.48; }
@@ -77,7 +75,7 @@ img { max-width: 100%; }
 .work-northline .project-visual { background: #c8c2b4; }
 .work-northline .project-primary { width: 72%; height: 75%; }
 .work-northline .project-secondary { width: 52%; height: 60%; }
-.work-milemarker .project-visual { background: #d7b61d; }
+.work-milemarker .project-visual { background: #07684f; }
 .work-milemarker .project-primary { left: auto; right: 6%; }
 .work-milemarker .project-secondary { right: auto; left: 5%; }
 .work-card:hover .project-primary { transform: translateY(-5px); filter: saturate(1.04); }
@@ -138,9 +136,7 @@ img { max-width: 100%; }
   .nav-links a { font-size: 42px; font-weight: 600; letter-spacing: -.06em; }
   .hero, .hero-inner { min-height: 700px; }
   .hero-inner { padding-top: 116px; padding-bottom: 42px; }
-  .hero h1 { line-height: .78; }
-  .hero h1 span { font-size: clamp(78px, 24vw, 120px); }
-  .hero h1 em { margin-top: .11em; font-size: clamp(66px, 20.5vw, 103px); }
+  .hero h1 { max-width: 10ch; font-size: clamp(54px, 14.5vw, 78px); line-height: .87; }
   .hero-bottom { grid-template-columns: 1fr; gap: 28px; }
   .hero-lead { max-width: 30ch; font-size: 17px; }
   .underlined-link { width: 215px; justify-self: start; }
@@ -172,8 +168,7 @@ img { max-width: 100%; }
 }
 
 @media (max-width: 430px) {
-  .hero h1 span { font-size: 22.5vw; }
-  .hero h1 em { font-size: 19vw; }
+  .hero h1 { font-size: 14.5vw; }
   .work-heading h2 { font-size: 40px; }
   .services-body h2 { font-size: 43px; }
   .approach-triad h3 { font-size: 70px; }
