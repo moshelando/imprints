@@ -1,10 +1,5 @@
-const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.nav-links');
-
-const syncHeader = () => {
-  if (header) header.classList.toggle('is-scrolled', window.scrollY > 10);
-};
 
 const closeMenu = () => {
   if (!menuButton || !navigation) return;
@@ -13,9 +8,6 @@ const closeMenu = () => {
   navigation.classList.remove('is-open');
   document.body.classList.remove('menu-open');
 };
-
-syncHeader();
-window.addEventListener('scroll', syncHeader, { passive: true });
 
 if (menuButton && navigation) {
   menuButton.addEventListener('click', () => {

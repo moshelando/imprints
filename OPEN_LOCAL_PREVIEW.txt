@@ -1,12 +1,14 @@
 LANDO WORKS — LOCAL PREVIEW
 
 1. Extract the ZIP.
-2. Open the extracted folder.
-3. Double-click index.html.
+2. Open a terminal in the extracted folder.
+3. Run: `python3 -m http.server 4173`
+4. Open: `http://localhost:4173/`
 
-No installation, build command, or local server is required.
+Opening `index.html` directly also works for the main page, but a local server
+is the reliable way to review all links and project pages.
 
-The five website demonstrations are included under projects/ and open from
+The four featured website demonstrations are included under projects/ and open from
 the main Lando Works page.
 
 Forms in the demonstrations are interface previews. They do not transmit or

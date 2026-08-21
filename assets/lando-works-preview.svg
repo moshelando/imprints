@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Lando Works</title>
-  <desc id="desc">Made to work. Built to last.</desc>
+  <desc id="desc">Works beautifully. Websites, software, systems, and documents by Lando Works.</desc>
   <rect width="1200" height="630" fill="#f1eee5"/>
   <rect width="32" height="630" fill="#cbff3d"/>
   <path d="M32 0h1168v16H32z" fill="#171713"/>
@@ -10,19 +10,19 @@
   <path d="M91 94h18v58h28v18H91z" fill="#f7f4eb"/>
   <path d="m120 95 11 74h12l8-38 10 38h11l11-74h-15l-5 43-9-37h-10l-8 37-4-43z" fill="#cbff3d"/>
   <g fill="#171713" font-family="Arial, Helvetica, sans-serif">
-    <text x="74" y="239" font-size="20" font-weight="700" letter-spacing="3">INDEPENDENT DIGITAL + PUBLISHING PRACTICE</text>
+    <text x="74" y="239" font-size="20" font-weight="700" letter-spacing="3">DESIGN + DEVELOPMENT</text>
     <text x="70" y="369" font-size="104" font-weight="800" letter-spacing="-7">Lando</text>
     <text x="70" y="469" font-size="104" font-weight="800" letter-spacing="-7">Works.</text>
     <text x="74" y="564" font-size="23" font-weight="700" letter-spacing="2">LANDOWORKS.COM</text>
   </g>
   <g fill="#f7f4eb" font-family="Arial, Helvetica, sans-serif">
     <text x="838" y="118" font-size="16" font-weight="700" letter-spacing="3">LW / 01</text>
-    <text x="838" y="282" font-size="50" font-weight="700" letter-spacing="-2">Made to</text>
-    <text x="838" y="340" font-size="50" font-weight="700" letter-spacing="-2">work.</text>
-    <text x="838" y="426" font-size="50" font-weight="700" letter-spacing="-2">Built to</text>
-    <text x="838" y="484" font-size="50" font-weight="700" letter-spacing="-2">last.</text>
+    <text x="838" y="298" font-size="68" font-weight="700" letter-spacing="-4">Works</text>
+  </g>
+  <text x="833" y="372" fill="#cbff3d" font-family="Georgia, 'Times New Roman', serif" font-size="55" font-style="italic" letter-spacing="-3">beautifully.</text>
+  <g fill="#f7f4eb" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">
+    <text x="838" y="486">FUNCTION.</text><text x="943" y="486">DESIGN.</text><text x="1043" y="486">ART.</text>
   </g>
   <path d="M838 542h287" stroke="#cbff3d" stroke-width="5"/>
-  <circle cx="838" cy="542" r="9" fill="#cbff3d"/>
-  <circle cx="1125" cy="542" r="9" fill="#cbff3d"/>
+  <circle cx="838" cy="542" r="9" fill="#cbff3d"/><circle cx="1125" cy="542" r="9" fill="#cbff3d"/>
 </svg>

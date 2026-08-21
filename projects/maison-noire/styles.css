@@ -169,7 +169,8 @@ main{display:block}
   .atelier-frame{grid-template-columns:1fr}
   .atelier-frame-media{min-height:68svh;height:68svh;border-right:0;border-bottom:1px solid var(--line)}
   .atelier-frame-copy{padding:100px 20px 110px}
-  .atelier-frame-copy h1,.section-heading{font-size:clamp(58px,19vw,94px)}
+  .atelier-frame-copy h1{font-size:clamp(58px,19vw,94px)}
+  .section-heading{font-size:clamp(46px,12.2vw,58px)}
   .process-row{grid-template-columns:42px 1fr;gap:20px;padding:32px 0}
   .process-row p{grid-column:2}
   .quote-frame{padding:120px 20px}

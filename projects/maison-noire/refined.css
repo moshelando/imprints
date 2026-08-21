@@ -167,13 +167,14 @@
 }
 
 @media(max-width:650px){
-  .maison-header{min-height:66px;align-items:center;gap:16px}
-  .maison-brand{font-size:12px}
-  .maison-nav{gap:13px;overflow-x:auto}
-  .maison-nav a{font-size:8px;white-space:nowrap}
+  .maison-header{min-height:66px;align-items:center;gap:10px;padding-inline:12px}
+  .maison-brand{font-size:11px}
+  .maison-nav{gap:11px;overflow-x:auto;scrollbar-width:none}
+  .maison-nav::-webkit-scrollbar{display:none}
+  .maison-nav a{font-size:7px;letter-spacing:.14em;white-space:nowrap}
   .maison-nav a:first-child{display:none}
   .campaign-copy{padding:118px 20px 80px}
-  .campaign-copy h1{font-size:clamp(68px,23vw,108px)}
+  .campaign-copy h1{font-size:clamp(66px,21vw,100px)}
   .edition-overview{padding:92px 20px}
   .edition-heading h2{font-size:clamp(55px,18vw,82px)}
   .look-grid{grid-template-columns:1fr}

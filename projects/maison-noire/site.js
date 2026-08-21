@@ -1,11 +1,11 @@
 (() => {
   const looks = {
-    '01': {name:'Long jacket', image:'assets/look-01.svg', cloth:'Wool barathea', colour:'Black', construction:'Half canvas / horn closure', description:'A long, quiet line with room through the body and a controlled shoulder.'},
-    '02': {name:'Column dress', image:'assets/hero-look.svg', cloth:'Washed silk', colour:'Black', construction:'Bias cut / hand-finished hem', description:'A single line that follows movement without holding it too closely.'},
-    '03': {name:'Soft trouser', image:'assets/atelier.svg', cloth:'Wool twill', colour:'Black', construction:'Deep pleat / clean waistband', description:'Volume gathered at the waist and released through a long, fluid leg.'},
-    '04': {name:'Evening coat', image:'assets/hero-look.svg', cloth:'Double wool', colour:'Ink', construction:'Full length / concealed closure', description:'A protective outer line with an open volume and a restrained finish.'},
-    '05': {name:'Bias shirt', image:'assets/look-01.svg', cloth:'Silk crepe', colour:'Bone', construction:'Soft collar / fine seam', description:'A pale counterpoint to the collection, cut to fall away from the body.'},
-    '06': {name:'Narrow skirt', image:'assets/atelier.svg', cloth:'Wool satin', colour:'Black', construction:'Clean waist / back vent', description:'A precise column balanced by enough ease to preserve movement.'}
+    '01': {name:'Long jacket', image:'assets/look-01-long-jacket.webp', alt:'Model wearing the long black wool jacket', cloth:'Wool barathea', colour:'Black', construction:'Half canvas / horn closure', description:'A long, quiet line with room through the body and a controlled shoulder.'},
+    '02': {name:'Column dress', image:'assets/look-02-column-dress.webp', alt:'Model wearing the full-length black silk column dress', cloth:'Washed silk', colour:'Black', construction:'Bias cut / hand-finished hem', description:'A single line that follows movement without holding it too closely.'},
+    '03': {name:'Soft trouser', image:'assets/look-03-soft-trouser.webp', alt:'Model wearing high-waisted black wool trousers', cloth:'Wool twill', colour:'Black', construction:'Deep pleat / clean waistband', description:'Volume gathered at the waist and released through a long, fluid leg.'},
+    '04': {name:'Evening coat', image:'assets/look-04-evening-coat.webp', alt:'Model wearing the full-length black evening coat', cloth:'Double wool', colour:'Ink', construction:'Full length / concealed closure', description:'A protective outer line with an open volume and a restrained finish.'},
+    '05': {name:'Bias shirt', image:'assets/look-05-bias-shirt.webp', alt:'Model wearing a bone silk bias shirt with black trousers', cloth:'Silk crepe', colour:'Bone', construction:'Soft collar / fine seam', description:'A pale counterpoint to the collection, cut to fall away from the body.'},
+    '06': {name:'Narrow skirt', image:'assets/look-06-narrow-skirt.webp', alt:'Model wearing the full-length black wool-satin skirt', cloth:'Wool satin', colour:'Black', construction:'Clean waist / back vent', description:'A precise column balanced by enough ease to preserve movement.'}
   };
 
   const params = new URLSearchParams(location.search);
@@ -18,7 +18,7 @@
     const nextNumber = String((Number(lookNumber) % Object.keys(looks).length) + 1).padStart(2, '0');
     const image = document.querySelector('[data-look-image]');
     image.src = look.image;
-    image.alt = `Abstract silhouette of the ${look.name.toLowerCase()}`;
+    image.alt = look.alt;
     document.querySelector('[data-look-number]').textContent = `Look ${lookNumber} / Edition 07`;
     document.querySelector('[data-look-title]').textContent = `${look.name}.`;
     document.querySelector('[data-look-description]').textContent = look.description;
