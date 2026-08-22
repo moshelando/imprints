@@ -164,8 +164,6 @@ body:has(.hero) .menu{border-color:#fff;color:#fff}
   border-bottom:1px solid var(--line);
 }
 .service-details .service-block:first-child{padding-top:0}
-.service-details .service-block:nth-child(even){grid-template-columns:minmax(360px,.92fr) minmax(0,1.08fr)}
-.service-details .service-block:nth-child(even) figure{order:2}
 .service-details .service-block figure{
   height:430px;
   margin:0;
@@ -238,6 +236,14 @@ body:has(.hero) .menu{border-color:#fff;color:#fff}
   height:5px;
   border-radius:50%;
   background:var(--rust);
+}
+
+/* Keep Services measured and consistent; Work owns the alternating editorial rhythm. */
+.materials .material-grid{
+  grid-template-columns:1.08fr .92fr;
+}
+.materials .material-grid figure{
+  order:2;
 }
 
 @media(max-width:900px){
