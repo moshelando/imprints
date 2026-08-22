@@ -50,7 +50,7 @@ img { max-width: 100%; }
 .hero { min-height: 760px; background: var(--blue); color: var(--white); }
 .hero-inner { min-height: 760px; display: flex; flex-direction: column; padding-top: 123px; padding-bottom: 58px; }
 .hero h1 { max-width: 11ch; margin: 0; font-size: clamp(78px, 9.4vw, 142px); font-weight: 700; letter-spacing: -.08em; line-height: .84; text-wrap: balance; }
-.hero h1 em { font-family: Baskerville, "Iowan Old Style", "Times New Roman", serif; font-style: italic; font-weight: 400; letter-spacing: -.055em; white-space: nowrap; }
+.hero h1 em { color: var(--acid); font-family: Baskerville, "Iowan Old Style", "Times New Roman", serif; font-style: italic; font-weight: 400; letter-spacing: -.055em; white-space: nowrap; }
 .hero-bottom { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; }
 .hero-bottom p { margin: 0; letter-spacing: -.035em; }
 .hero-lead { max-width: 31ch; font-size: 19px; line-height: 1.48; }
